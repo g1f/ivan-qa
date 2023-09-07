@@ -1,0 +1,147 @@
+/*colors-special*/
+.resume-wrapper .header {
+  background-color: var(--resume-header-bg-color);
+}
+
+.main-wrapper h2
+,#edu-link
+,#edu-link::after {
+  color: var(--titles-color);
+}
+
+.company-name,
+.date {
+  color: var(--font-description-color);
+}
+
+.contact-links li {
+  color: var(--links-color);
+}
+
+.lang-desc {
+  color: var(--font-description-color);
+}
+
+/*margin-specials*/
+.nested-p
+,.job-title
+,.side-lang h4 {
+  margin: 0;
+}
+
+.lang-desc
+,.upper-row {
+  margin-bottom: 5px;
+}
+
+.resume-wrapper .section ul
+,.resume-wrapper .section p
+,.contact-links li
+,.meta
+,.company-name
+,.side-lang
+,.side-skill-list>li
+,.btn-simple  {
+  margin-bottom: 10px;
+}
+
+.resume-wrapper .section-wrapper
+,.resume-wrapper .side-section-wrapper
+,.resume-wrapper .name
+,.resume-wrapper .position
+,.contact-links {
+  margin-bottom: 30px;
+}
+
+.resume-wrapper .avatar {
+  margin: 30px;
+}
+
+/*wrappers*/
+.resume-wrapper {
+  width: 70%;
+}
+
+.resume-wrapper .main-wrapper {
+  float: left;
+  width: 100%;
+}
+
+/*footer*/
+.resume-wrapper .footer {
+  overflow: hidden;
+  clear: both;
+  text-align: center;
+  padding: 60px;
+}
+
+/*header*/
+.resume-wrapper .header {
+  float: left;
+  width: 100%;
+}
+
+.resume-wrapper .person-info {
+  float: left;
+  padding: 30px;
+}
+
+.resume-wrapper .avatar {
+  display: block;
+  float: right;
+}
+
+/*sections*/
+.resume-wrapper .main-section {
+  float: left;
+  max-width: 65%;
+  padding: 30px;
+}
+
+.resume-wrapper .side-section {
+  float: right;
+  max-width: 20%;
+  padding: 30px;
+}
+
+/*h1-h6-links-buttons-lists-etc*/
+.resume-wrapper .name
+,.resume-wrapper .position {
+  display: block;
+  padding: 0;
+}
+
+
+.upper-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-links li {
+  font-weight: 600;
+}
+
+.job-info-list {
+  padding-left: 20px;
+  text-align: justify;
+}
+
+.job-info-list > li {
+  list-style-type: disc;
+}
+
+.btn-simple {
+  display: inline-block;
+  color: var(--links-color);
+  background-color: var(--links-bg-color);
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.btn-simple:hover {
+  background-color: rgb(185, 255, 185);
+}
