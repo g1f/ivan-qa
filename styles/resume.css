@@ -1,25 +1,25 @@
 /*colors-special*/
 .resume-wrapper .header {
-  background-color: var(--resume-header-bg-color);
+  background-color: var(--bg-color-header-resume);
 }
 
 .main-wrapper h2
 ,#edu-link
 ,#edu-link::after {
-  color: var(--titles-color);
+  color: var(--color-titles);
 }
 
 .company-name,
 .date {
-  color: var(--font-description-color);
+  color: var(--color-font-description);
 }
 
 .contact-links li {
-  color: var(--links-color);
+  color: var(--color-links);
 }
 
 .lang-desc {
-  color: var(--font-description-color);
+  color: var(--color-font-description);
 }
 
 /*margin-specials*/
@@ -134,8 +134,8 @@
 
 .btn-simple {
   display: inline-block;
-  color: var(--simple-links-color);
-  background-color: var(--links-bg-color);
+  color: var(--color-btn-links);
+  background-color: var(--bg-color-links);
   border: none;
   border-radius: 30px;
   text-align: center;
@@ -144,9 +144,9 @@
 }
 
 .btn-simple:hover {
-  background-color: var(--simple-links-bg-color-hover);
+  background-color: var(--bg-color-links-hover);
 }
 
 .btn-simple:active {
-  box-shadow: var(--btn-bx-shdw);
+  box-shadow: var(--color-btn-shadow);
 }

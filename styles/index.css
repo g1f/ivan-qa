@@ -38,20 +38,24 @@
   font-size: 1.5em;
   line-height: 130px;
   border: none;
-  color: var(--other-links-color);
-  background-color: var(--links-bg-color);
+  color: var(--color-btn-links);
+  background-color: var(--bg-color-links);
   cursor: pointer;
   width: 140px;
   height: 140px;
   border-radius: 50%;
   margin: 10px;
-  box-shadow: var(--btn-bx-shdw);
+  box-shadow: var(--color-btn-shadow);
   transition: 0.2s all;
+}
+
+.project-links:hover {
+  background-color: var(--bg-color-links-hover);
 }
 
 .project-links:active {
   transform: scale(0.98);
-  box-shadow: var(--btn-bx-shdw);
+  box-shadow: var(--color-btn-shadow);
 }
 
 /*gallery*/
@@ -75,7 +79,7 @@
   justify-content: center;
   max-height: 700px;
   width: 100%;
-  box-shadow: var(--section-shdws);
+  box-shadow: var(--color-section-shadow);
   margin-bottom: 30px;
   border-radius: 15px;
 }
@@ -90,7 +94,7 @@
 .thumb-bar img {
   width: 18%;
   cursor: pointer;
-  box-shadow: var(--section-shdws);
+  box-shadow: var(--color-section-shadow);
   border-radius: 15px;
 }
 

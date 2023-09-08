@@ -21,9 +21,9 @@
 }
 
 .calc-result-section {
-  color: var(--font-color);
+  color: var(--color-font);
   border-radius: 5px;
-  border: 1px solid var(--font-description-color);
+  border: 1px solid var(--color-font-description);
 }
 
 /*calc btns headers paras*/
@@ -32,18 +32,18 @@
 }
 
 .calculator h3 {
-  color: var(--titles-color);
+  color: var(--color-titles);
 }
 
 #calc-notice {
-  color: var(--calc-notice);
+  color: var(--color-calc-notice);
   font-size: 1.1em;
   margin: 0;
 }
 
 .btn-calc {
   margin: 20px 0 20px 0;
-  background-color: var(--links-bg-color);
+  background-color: var(--bg-color-links);
 }
 
 .btn-cancel-calc {
@@ -54,14 +54,14 @@
 .btn-calc
 ,.btn-cancel-calc {
   display: inline-block;
-  color: var(--links-color);
+  color: var(--color-btn-links);
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   border: none;
   border-radius: 10px;
-  box-shadow: var(--calc-btn-bx-shdw);
+  box-shadow: var(--color-btn-shadow);
 }
 
 .btn-calc:active
@@ -76,7 +76,7 @@
 
 .calc-result-section p {
   display: inline-block;
-  color: var(--font-color);
+  color: var(--color-font);
   font-size: 1.5em;
   margin-bottom: 1%;
   max-width: 100%;

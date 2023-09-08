@@ -1,7 +1,7 @@
 .projects-wrapper .main-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 0 30px 0 30px;
 }
 
 .projects-wrapper .main-section {
@@ -30,7 +30,7 @@
 }
 
 .projects-wrapper .side-section-nav {
-  color: var(--heading-color);
+  color: var(--color-headings);
 }
 
 .projects-wrapper .side-section-nav li {
