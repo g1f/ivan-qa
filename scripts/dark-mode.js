@@ -1,5 +1,5 @@
 //darkmode
-var btnDark = document.querySelector(".btn-dark");
+var btnDark = document.querySelector(".btn-dark-mode");
 
 function darkMode() {
    var bodyDark = document.body;
