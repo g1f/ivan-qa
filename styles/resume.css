@@ -41,7 +41,8 @@
 ,.company-name
 ,.side-lang
 ,.side-skill-list>li
-,.btn-simple  {
+,.btn-simple
+,.btn-back-to-main  {
   margin-bottom: 10px;
 }
 
@@ -133,7 +134,7 @@
 
 .btn-simple {
   display: inline-block;
-  color: var(--links-color);
+  color: var(--simple-links-color);
   background-color: var(--links-bg-color);
   border: none;
   border-radius: 30px;
@@ -143,5 +144,9 @@
 }
 
 .btn-simple:hover {
-  background-color: rgb(185, 255, 185);
+  background-color: var(--simple-links-bg-color-hover);
+}
+
+.btn-simple:active {
+  box-shadow: var(--btn-bx-shdw);
 }
