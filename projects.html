@@ -15,14 +15,20 @@
     <link rel="stylesheet" type="text/css" href="../ivan-qa/styles/main-style.css">
     <link rel="stylesheet" type="text/css" href="../ivan-qa/styles/projects.css">
 </head>
-
+    
 <body id="top-anchor">
+    <!--back-to-top-->
+    <a href="#top-anchor" rel="top-anchor">
+        <div class="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </a>
     <!--page-wrapper-->
     <div class="projects-wrapper">
         <div class="top-wrapper">
             <!--theme-switcher-->
             <div class="dark-mode-section">
-                <button class="btn-dark">Dark Mode</button>
+                <button>Dark Mode</button>
             </div>
             <script src="../ivan-qa/scripts/dark-mode.js"></script>
             <!--top-section-->
@@ -30,15 +36,15 @@
                 <!--header-->
                 <header>
                     <div class="person-info">
-                        <h1 class="name"><a href="../ivan-qa/index.html"><i class="fa fa-cube" aria-hidden="true"></i>Ivan
+                        <h1 class="name"><a href="../ivan-qa/index.html"><i class="fa fa-user-o" aria-hidden="true"></i>Ivan
                                 Gavrikov</a></h1>
                         <h2 class="position">QA Specialist</h2>
                     </div>
                 </header>
 
             <!--nav-->
-            <nav>
-                <ul class="nav-item">
+            <nav class="top-nav">
+                <ul>
                     <a href="../ivan-qa/resume.html">
                         <li>Resume</li>
                     </a>
@@ -61,58 +67,65 @@
 
         <!--main-wrapper-->
         <div class="main-wrapper">
-        <!--main-section-->
-        <main class="main-section">
-                <div class="section-wrapper">
-                <section class="calculator">
-                    <h2 id="calc-anchor">Simple calculator</h2>
-                    <div class="calc-input-section">
-                        <h3>Enter a number</h3>
-                        <input class="calc-num-input" type="text">
-                        <div class="calc-notice-section">
-                            <p id="calc-notice"></p>
-                        </div>
-                    </div>
-                    
-                    <div class="calc-buttons-section">
-                        <button class="btn-calc" id="btn-result-all">Result all</button>
-                        <button class="btn-cancel-calc" id="btn-cancel">Cancel</button><br>
-                        <button class="btn-calc" id="btn-sqr">Square</button>
-                        <button class="btn-calc" id="btn-cube">Cube</button>
-                        <button class="btn-calc" id="btn-factorial">Factorial</button>
-                        <button class="btn-calc" id="btn-sqr-root">Square root</button>
-                        <button class="btn-calc" id="btn-sqr-cubic-root">Cubic root</button>
-                        <button class="btn-calc" id="btn-circle-length">Circle length</button>
-                    </div>
-
-                    <h3>Result</h3>
-                    <div class="calc-result-section">
-
-                        <img id="img-sqr"><p id="p-sqr"></p><br>
-                        <img id="img-cube"><p id="p-cube"></p><br>
-                        <img id="img-factorial"><p id="p-factorial"></p><br>
-                        <img id="img-sqr-root"><p id="p-sqr-root"></p><br>
-                        <img id="img-cube-root"><p id="p-sqr-cubic-root"></p><br>
-                        <img id="img-circle-length"><p id="p-circle-length"></p>    
-                    </div>
-                    <script src="../ivan-qa/scripts/calculator.js"></script>
+            <!--main-section-->
+            <main class="main-section">
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
                 </section>
-                </div>
-        </main>
-
-        <aside class="side-section">
-            <!--section-->
-            <section class="side-section-wrapper">
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+                <section class="main-section-item">
+                    <h2 id="calc-anchor"><a href="../ivan-qa/projects/calculator.html">Simple calculator</a></h2>
+                    <p>There is description</p>
+                </section>
+            </main>
+        
+            <!--side-section-->
+            <aside class="side-section">
                 <h3>Articles</h3>
                 <ul class="side-section-nav">
-                <a href=#top-anchor rel="top-anchor"><li>Top</li></a>
-                <a href=#calc-anchor rel="calculator"><li>Calculator</li></a>
-                <a href=#calc-anchor rel="calculator"><li>Calculator</li></a>
-                <a href=#calc-anchor rel="calculator"><li>Calculator</li></a>
+                    <a href=#calc-anchor rel="calc-anchor">
+                        <li>Calculator</li>
+                    </a>
                 </ul>
-            </section>
-        </aside>
-    </div>
+            </aside>
+        </div>
+
         <!--footer-->
         <footer class="footer">
             <!--footer-section-1-->
