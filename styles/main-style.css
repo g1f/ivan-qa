@@ -92,6 +92,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+  text-transform: capitalize;
 }
 
 h1 {
@@ -101,33 +102,32 @@ h1 {
 
 h2 {
   font-size: 1.4em;
-  margin-bottom: 10px;
+  margin-bottom: 0.4em;
 }
 
 h3 {
   font-size: 1.3em;
-  margin-bottom: 10px;
+  margin-bottom: 0.3em;
 }
 
 h4 {
   font-size: 1.2em;
-  margin-bottom: 8px;
+  margin-bottom: 0.3em;
 }
 
 h5 {
-  font-size: 1.1em;
-  margin-bottom: 6px;
+  font-size: 1em;
+  margin-bottom: 0.3em;
 }
 
 h6 {
-  font-size: 1em;
-  margin-bottom: 4px;
+  font-size: 0.8em;
+  margin-bottom: 0.3em;
 }
 
-/*lists / para/ icons / hyperlinks*/
+/*lists / para/ icons / imgs / hyperlinks*/
 p {
   font-size: 1em;
-  margin-bottom: 10px;
 }
 
 li {
@@ -135,13 +135,18 @@ li {
 }
 
 i {
-  padding-right: 10px;
+  padding-right: 0.4em;
 }
 
 a
 ,a:visited {
   text-decoration: none;
   color: var(--color-links);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*wrappers*/
@@ -166,7 +171,7 @@ a
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 10px;
+  padding: 0.3em;
 }
 
 .dark-mode-section button {
