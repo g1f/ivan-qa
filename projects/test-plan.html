@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ivan Gavrikov &#8211; Projects &#8211; Test Plan</title>
+    <!--Meta-->
+    <meta charset=utf-8>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ivan-qa/favicon-apple-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ivan-qa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ivan-qa/favicon-16x16.png">
+    <!--Plugins CSS-->
+    <!--font-awesome-version 4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/main-style.css">
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/projects-page.css">
+</head>
+
+<body id="top">
+    <!--back-to-top-->
+    <a href="#top" rel="back-to-top">
+        <div class="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </a>
+    <!--page-wrapper-->
+    <div class="projects-page-wrapper">
+        <div class="top-wrapper">
+            <!--theme-switcher-->
+            <div class="dark-mode-section">
+                <button class="btn-dark-mode">Dark Mode</button>
+            </div>
+            <script src="../../ivan-qa/scripts/dark-mode.js"></script>
+            <!--top-section-->
+            <div class="top-section">
+                <!--header-->
+                <header>
+                    <div class="person-info">
+                        <h1 class="name"><a href="../../ivan-qa/index.html"><i class="fa fa-user-o"
+                                    aria-hidden="true"></i>Ivan
+                                Gavrikov</a></h1>
+                        <h2 class="position">QA Specialist</h2>
+                    </div>
+                </header>
+
+                <!--nav-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="../../ivan-qa/resume.html">Resume</li></a>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/projects.html">Projects</li></a>
+
+                        <li>|</li>
+
+                        <li><a href="https://github.com/g1f">GitHub</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/feedback.html">Feedback</li></a>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--main-nav-menu-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../ivan-qa/index.html">Main</a></li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="../../ivan-qa/projects.html">Projects</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <li>Test Plan</li>
+            </ul>
+        </nav>
+        <!--main-wrapper-->
+        <div class="main-wrapper">
+            <!--main-section-->
+            <main class="main-section">
+                <section class="main-section-item">
+                    <div class="meta">
+                        <h3>Test Plan</h3>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="test_plan_definition">Test Plan Definition</h4>
+                        <p>By ISTQB glossary the definition of a test strategy is – a document describing the scope, approach, resources and
+                            schedule of intended test activities.
+                        </p>
+                        <p>
+                            Test Plan is a dynamic document. The success of a testing project depends upon a well-written Test Plan document
+                            that is current at all times. Test Plan is more or less like a blueprint of how the testing activity is going to
+                            take place in a project.
+                        </p>
+                        <p>
+                            The process of writing a test strategy is more about thinking about risk factors within the project and planning to
+                            mitigate those risks, rather than ticking boxes to show that all types of testing have been included.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="test_planning_at_sdlc_phases">Test Planning At SDLC Phases</h4>
+                        <p><b>Initiate</b></p>
+                        <p>QA team should get involved while the scope of the project is gathered from the
+                            customer/client in the form of business requirements. But in the real world, that is not the case. From a
+                            practical point of view, the involvement of the QA team is NIL. At the end of this phase, BRD is finalized and a
+                            basic Project Plan is created.
+                        </p>
+                        <p><b>Define</b></p>
+                        <p>SRS is created from the BRD. Test plan's initial draft is created. At this point, since the QA
+                            team is not done with the SRS review, the scope of testing is not clear. So, the TP at this phase will only
+                            contain information on when testing is going to happen, project information and the team information (if we have
+                            it).
+                        </p>
+                        <p><b>Design</b></p>
+                            information on what to test and a good estimate of how many test cases we might get etc. A second version of the
+                            Test plan is created incorporating all this information.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="components_of_a_plan_document">Components Of A Plan Document</h4>
+                        <p><b>Scope</b></p>
+                        <p>
+                        <p>Test Scenarios/Test objectives that will be validated.
+                        </p>
+
+                        <p><b>Out of scope</b></p>
+                        <p>Enhanced clarity on what we are not going to cover.
+                        </p>
+
+                        <p><b>Assumptions</b></p>
+                        <p>All the conditions that need to hold true for us to be able to proceed successfully.
+                        </p>
+
+                        <p><b>Schedules</b></p>
+                        <ul>
+                            <li>Test Scenario prep</li>
+                            <li>Test Documentation- test cases/test data/setting up environment</li>
+                            <li>Test Cycle - how many cycles</li>
+                            <li>Start and End date for cycles</li>
+                        </ul>
+                    
+                        <p><b>Roles and Responsibilities</b></p>
+                        <ul>
+                            <li>Team members are listed</li>
+                            <li>Who is to do what?</li>
+                            <li>Module owners are listed and their contact info</li>
+                        </ul>
+                    
+                        <p><b>Deliverables</b></p>
+                        <ul>
+                            <li>What documents (test artifacts) are going to produce at what time frames?</li>
+                            <li>What can be expected from each document?</li>
+                        </ul>
+                    
+                        <p><b>Environment</b></p>
+                        <ul>
+                            <li>What kind of environment requirements exist?</li>
+                            <li>Who is going to be in charge?</li>
+                            <li>What to do in case of problems?</li>
+                        </ul>
+                    
+                        <p><b>Tools</b></p>
+                        <ul>
+                            <li>For Example, JIRA for bug tracking</li>
+                            <li>Login</li>
+                            <li>How to use JIRA?</li>
+                        </ul>
+
+                        <p><b>Defect Management</b></p>
+                        <ul>
+                            <li>Who are we going to report the defects to?</li>
+                            <li>How are we going to report?</li>
+                            <li>What is expected- do we provide screenshot?</li>
+                        </ul>
+                    
+                        <p><b>Risks and Risk Management</b></p>
+                        <ul>
+                            <li>Risks are listed</li>
+                            <li>Risks are analyzed- likelihood and impact is documented</li>
+                            <li>Risk mitigation plans are drawn</li>
+                        </ul>
+                    
+                        <p><b>Exit criteria</b></p>
+                        <p>
+                        <p>When to stop testing?
+                        </p>
+                    
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="test_planning">Test Planning</h4>
+                        <p>Planning a test is the core important section in the testing cycle. The outcome of the testing phase will be
+                            determined by the quality and scope of the planning that has been done for the testing.
+                        </p>
+                        <img src="../images/articles/test-plan-test-planning.jpg" alt="test-planning-time">
+                        <p>Planning the test usually occurs during the development phase in order to save the lead time for test execution
+                            upon mutual agreement from all the parties involved.</p>
+                        
+                        <h5>Major Components in the Planning Phase</h5>
+                        <p>Given below are the major components that are involved in the planning phase.
+                        </p>
+                        <p><b>Test Strategy:</b> This is one of the most important sections that can explain the strategy that will be used
+                            while testing.</p>
+                        <p><b>Test Coverage:</b> This is essentially required and it will do conformance mapping of the business needs and the
+                            test cases so that one can ensure if the entire software has been tested or not.</p>
+                        <p><b>Test Cycles and Durations: </b> This can become very critical depending upon the rounds of development and their
+                            time for completing each round.</p>
+                        <p><b>Pass/Fail Criteria:</b> It is very much required one in which the pass and fail criteria are defined. A few times
+                            this will also be defined by the clients.</p>
+                        <p><b>Business and Technical Requirements:</b> Need to have the software and the purposes they serve will be clearly
+                            defined along with the low-level explanations.</p>
+                        
+                        <h5>Limitations</h5>
+                        <p>There are few things that can actually control the software testing phase especially the planning phase.<br>
+                            Following are such few areas:
+                        </p>
+                            <p><b>Features to be and not to be tested:</b> This will clearly point out what has to be tested and what should not be.</p>
+                            <p><b>Suspension Criteria and Resumption Requirements:</b> This is the decision-maker on the software developed and the criteria defined in order to suspend the testing or resume the testing.</p>
+                            <p><b>Responsibilities:</b> A tester will have multiple responsibilities in ensuring the issues, bugs, and defects in the software under test. Additionally, the bugs have to be validated with the developers for them to fix.</p>
+                            <p><b>Risks and Contingencies:</b> Risks associated during the testing should be clearly mentioned and proper contingencies during the time have to be defined very clearly.</p>                            
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="test_execution_plan">Test Execution Plan</h4>
+                        <p>The execution of test cases is one of the steps in the STLC phase. This will have to be performed in accordance with the plans that were worked out earlier. Hence, planning always keeps dominating the whole of the testing phase. Below is an example where the testing team gets impacted by the changes in the testing plans.
+                        </p>
+                        <p><b>Observations:</b></p>
+                        <ul>
+                            <li>The testing plan will determine the test case execution.</li>
+                            <li>The execution part varies as per the plan.</li>
+                            <li>As long as the plan and the requirements are valid the test cases are valid too.</li>
+                        </ul>
+
+                        <h5>Ways to Overcome Problems while Execution</h5>
+                        <p>Testers will more often come across various scenarios while they perform the test execution. This is when the testers will have to understand and know the ways to resolve the problem or at least find a workaround for the issue.
+                        </p>
+
+                        <h5>Version Controlling and Management</h5>
+                        <p>Version Controlling and management of testing plans and the test cases are really important in order to showcase the timely deliverables. This is being more significant and is often done with the help of a version control tool.
+                        </p>
+                        <p>A version control tool not only helps them to control the testing plans but also assists in defects management. When there are testing projects with multiple cycles and releases, these tools can really help a lot in bringing down the metrics for supporting the testing deliverables.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="test_plan_&_test_execution_comparison">Test Plan & Test Execution Comparison</h4>
+                        <table>
+                            <tr>
+                                <th>Comparison area</th>
+                                <th>Test Strategy</th>
+                                <th>Test</th>
+                            </tr>
+                            <tr>
+                                <td><b>Person responsible</b></td>
+                                <td>The test manager will be preparing the Test plan and will be sharing to all the stake holders for their review.</td>
+                                <td>This will be normally done by tester keeping in mind that the test cases prepared has been approved and signed off.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Main focus</b></td>
+                                <td>The Test plan focus areas are how the testing should be carried out, what should be considered and what not to, environment that can be used, Test schedules etc.</td>
+                                <td>The Test execution focuses mainly on the execution of the test cases provided to be tested on the software.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Recurring or iterative mode</b></td>
+                                <td>This is a single time activity. Having said that it may or may not require modifications for the future releases of the software.</td>
+                                <td>There are 3 parts in this area when we talk about iteration.<br>
+                                    1. Functional testing.<br>
+                                    2. Regression testing.<br>
+                                    3. Re-testing.
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td><b>Inputs</b></td>
+                                <td>The inputs for creation of a test plan is really required and to be provided by business analysts, Architect, clients etc.</td>
+                                <td>The test case document is the major input.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Period when it can be started</b></td>
+                                <td>It has to be started along with the development cycle for effective outcome and to save time. But there are few models like water fall model where in the testing phase will start only after the development phase has been completed.</td>
+                                <td>Execution has to be started strictly after the development of the software has been done.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Closure period</b></td>
+                                <td>The test plan will have no such closure period. Generally, a sign off from all interested parties for the software will be provided.</td>
+                                <td>Execution for a specific release or cycle will be considered to be closed when all of the test cases have been executed against the software.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Deliverable positioning</b></td>
+                                <td>Test plan will be considered as a major deliverable for the testing activity. This will be done as the first step in testing process.</td>
+                                <td>This will be coming as a last bench member in the testing phase. Post execution the defects/bugs status along with the test case execution status will be shared as one of the testing deliverables.</td>
+                            </tr>
+                            <tr>
+                                <td><b>Tools usage</b></td>
+                                <td>There will not be many tools used as the planning activity will be more of discussion and documentation. To keep track of any changes to the plan, the test managers will normally use any version control tool like VSS or something else.</td>
+                                <td>It will depend on the mode of execution. In case of manual no tool will be used for execution. But for logging the defects and managing, some tools will be used.
+                                    In case of automation testing, the execution will be done with the help of tools like QTP, SELENIUM etc.
+                                    </td>
+                            </tr>
+                            <tr>
+                                <td><b>Impacts on the deliverables</b></td>
+                                <td>This will impact all of the testing phases in a larger manner.</td>
+                                <td>This will impact the subsequent cycle or release to be tested.</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="how_to_write_a_test_plan">How to write a Test Plan</h4>
+                        <p>You already know that making a Test Plan is the most important task of Test Management Process. Follow the seven
+                            steps below to create a test plan as per IEEE 829.
+                        </p>
+                        <ol>
+                            <li>Analyze the product</li>
+                            <li>Design the Test Strategy</li>
+                            <li>Define the Test Objectives</li>
+                            <li>Define Test Criteria</li>
+                            <li>Resource Planning</li>
+                            <li>Plan Test Environment</li>
+                            <li>Schedule & Estimation</li>
+                            <li>Determine Test Deliverables</li>
+                        </ol>
+                        <h5>1. Analyze the product</h5>
+                        <p>How can you test a product without any information about it? The answer is Impossible. You must learn a product
+                            thoroughly before testing it.</p>
+                        <p>You should take a look around this website and also review product documentation. Review of product documentation
+                            helps you to understand all the features of the website as well as how to use it. If you are unclear on any
+                            items, you might interview customer, developer, designer to get more information.</p>
+                    
+                        <h5>2. Develop Test Strategy</h5>
+                        <p>Test Strategy is a critical step in making a Test Plan in Software Testing. A Test Strategy document, is a
+                            high-level document, which is usually developed by Test Manager. This document defines:</p>
+                        <ul>
+                            <li>The project’s testing objectives and the means to achieve them</li>
+                            <li>Determines testing effort and costs</li>
+                        </ul>
+                        <p><a href="../projects/test-strategy.html">You can check this article to read more about test strategy.</a></p>
+                    
+                        <h5>3. Define Test Objective</h5>
+                        <p>Test Objective is the overall goal and achievement of the test execution. The objective of the testing is finding
+                            as many software defects as possible; ensure that the software under test is bug free before release.</p>
+                        <p>To define the test objectives, you should do 2 following steps:</p>
+                        <ul>
+                            <li>List all the software features (functionality, performance, GUI…) which may need to test.</li>
+                            <li>Define the target or the goal of the test based on above features</li>
+                        </ul>
+                    
+                        <p>You can choose the ‘TOP-DOWN’ method to find the website’s features which may need to test. In this method, you
+                            break down the application under test to component and sub-component.</p>
+                        <p>Also, you can create a Mind-Map to find the website features:</p>
+                        <ul>
+                            <li>Check that whether website functionality (Account, Deposit…) is working as expected without any error or
+                                bugs in real business environment</li>
+                            <li>Check that the external interface of the website such as UI is working as expected and & meet the customer
+                                need</li>
+                            <li>Verify the usability of the website. Are those functionalities convenient for user or not?</li>
+                        </ul>
+                    
+                        <h5>4. Define Test Criteria</h5>
+                        <p>Test Criteria is a standard or rule on which a test procedure or test judgment can be based. There’re 2 types of
+                            test criteria as following.</p>
+                        <p><b>Suspension Criteria</b>
+                        <p>
+                        <p>Specify the critical suspension criteria for a test. If the suspension criteria are met during testing, the
+                            active test cycle will be suspended until the criteria are resolved.
+                        </p>
+                        <p><i>Test Plan Example:</i> If your team members report that there are 40% of test cases failed, you should suspend
+                            testing until the development team fixes all the failed cases.</p>
+                        <p><b>Exit Criteria</b>
+                        <p>
+                        <p>It specifies the criteria that denote a successful completion of a test phase. The exit criteria are the targeted
+                            results of the test and are necessary before proceeding to the next phase of development. Example: 95% of all
+                            critical test cases must pass.
+                        </p>
+                        <p>Some methods of defining exit criteria are by specifying a targeted run rate and pass rate.</p>
+                        <ul>
+                            <li>Run rate is ratio between number test cases executed/total test cases of test specification. For example,
+                                the test specification has total 120 TCs, but the tester only executed 100 TCs, So the run rate is 100/120 =
+                                0.83 (83%)</li>
+                            <li>Pass rate is ratio between numbers test cases passed / test cases executed. For example, in above 100 TCs
+                                executed, there’re 80 TCs that passed, so the pass rate is 80/100 = 0.8 (80%)</li>
+                        </ul>
+                        <p>This data can be retrieved in Test Metric documents.</p>
+                        <ul>
+                            <li>Run rate is mandatory to be 100% unless a clear reason is given.</li>
+                            <li>Pass rate is dependent on project scope, but achieving high pass rate is a goal.</li>
+                        </ul>
+                    
+                        <h5>5. Resource Planning</h5>
+                        <p>Resource plan is a detailed summary of all types of resources required to complete project task. Resource could
+                            be human, equipment and materials needed to complete a project.</p>
+                        <p>The resource planning is important factor of the test planning because helps in determining the number of
+                            resources (employee, equipment…) to be used for the project. Therefore, the Test Manager can make the correct
+                            schedule & estimation for the project.</p>
+                    
+                        <h6>Human Resource</h6>
+                        <p>The following table represents various members in your project team</p>
+
+                        <table>
+                            <tr>
+                                <th>No.</th>
+                                <th>Member</th>
+                                <th>Tasks</th>
+                            </tr>
+                            <tr>
+                                <td><b>1</b></td>
+                                <td>Test Manager</td>
+                                <td><b>Manage</b> the whole project<br>
+                                    Define project <b>directions</b><br>
+                                    Acquire appropriate resources
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>2</b></td>
+                                <td>Tester</td>
+                                <td>Identifying and describing appropriate test techniques/tools/automation architecture<br>
+                                    Verify and assess the Test Approach<br>
+                                    <b>Execute</b> the tests, <b>Log</b> results, <b>Report</b> the defects.<br>
+                                    Tester could be in-sourced or out-sourced members, based on the project budget.<br>
+                                    For the task which required <b>low skill</b>, I recommend you choose <b>outsourced</b> members to
+                                    <b>save</b> project cost.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>3</b></td>
+                                <td>Developer in Test</td>
+                                <td><b>Implement</b> the test cases, test program, test suite etc.</td>
+                            </tr>
+                            <tr>
+                                <td><b>4</b></td>
+                                <td>Test Administrator</td>
+                                <td>Builds up and ensures Test Environment and assets are <b>managed</b> and <b>maintained</b><br>
+                                    <b>Support</b> Tester to use the test environment for test execution
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>5</b></td>
+                                <td>SQA members</td>
+                                <td>Take in charge of quality assurance<br>
+                                    Check to confirm whether the testing process is meeting specified requirements
+                                </td>
+                            </tr>
+                        </table>
+                    
+                        <h6>System Resource</h6>
+                        <p>For testing, a web application, you should plan the resources as following tables:</p>
+
+                        <table>
+                            <tr>
+                                <th>No.</th>
+                                <th>Resources</th>
+                                <th>Descriptions</th>
+                            </tr>
+                            <tr>
+                                <td><b>1</b></td>
+                                <td>Server</td>
+                                <td>Install the web application under test<br>
+                                    This includes a separate web server, database server, and application server if applicable
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>2</b></td>
+                                <td>Test tool</td>
+                                <td>The testing tool is to automate the testing, simulate the user operation, generate the test results<br>
+                                    There are tons of test tools you can use for this project such as Selenium, QTP…etc.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>3</b></td>
+                                <td>Network</td>
+                                <td>You need a Network include LAN and Internet to simulate the real business and user environment</td>
+                            </tr>
+                            <tr>
+                                <td><b>4</b></td>
+                                <td>Computer</td>
+                                <td>The PC which users often use to connect the web server
+                                </td>
+                            </tr>
+                        </table>
+                    
+                        <h5>6. Plan Test Environment</h5>
+                    
+                        <h6>What is the Test Environment?</h6>
+                    
+                        <p>A testing environment is a setup of software and hardware on which the testing team is going to execute test
+                            cases. The test environment consists of real business and user environment, as well as physical environments,
+                            such as server, front end running environment.</p>
+                        <h6>How to setup the Test Environment</h6>
+                        <p>Back to your project, how do you set up test environment for this banking website?</p>
+                        <p>To finish this task, you need a strong cooperation between Test Team and Development Team.</p>
+                        <p>You should ask the developer some questions to understand the web application under test clearly. Here’re some
+                            recommended questions. Of course, you can ask the other questions if you need.</p>
+                        <ul>
+                            <li>What is the maximum user connection which this website can handle at the same time?</li>
+                            <li>What are hardware/software requirements to install this website?</li>
+                            <li>Does the user’s computer need any particular setting to browse the website?</li>
+                        </ul>
+                    
+                        <h5>7. Schedule & Estimation</h5>
+                        <p>In the Test Estimation phase, suppose you break out the whole project into small tasks and add the estimation for
+                            each task as below</p>
+
+                            <table>
+                                <tr>
+                                    <th>Task</th>
+                                    <th>Members</th>
+                                    <th>Estimate effort</th>
+                                </tr>
+                                <tr>
+                                    <td><b>Create the test specification</b></td>
+                                    <td>Test Designer</td>
+                                    <td>170 man-hour</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Perform Test Execution</b></td>
+                                    <td>Tester, Test Administrator</td>
+                                    <td>80 man-hour</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Test Report</b></td>
+                                    <td>Tester</td>
+                                    <td>10 man-hour</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Test Delivery</b></td>
+                                    <td></td>
+                                    <td>20 man-hour</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Total</b></td>
+                                    <td></td>
+                                    <td>280 man-hour</td>
+                                </tr>
+                            </table>
+
+                        <p>Then you create the <b>schedule</b> to complete these tasks.</p>
+                        <p>Making schedule is a common term in project management. By creating a solid schedule in the Test Planning, the
+                            Test Manager can use it as tool for monitoring the project progress, control the cost overruns.</p>
+                        <p>To create the project schedule, the Test Manager needs several types of input as below:</p>
+                            <p><b>Employee and project deadline:</b> The working days, the project deadline, resource availability are the
+                                factors which affected to the schedule</p>
+                            <p><b>Project estimation:</b> Base on the estimation, the Test Manager knows how long it takes to complete the
+                                project. So, he can make the appropriate project schedule</p>
+                            <p><b>Project Risk:</b> Understanding the risk helps Test Manager add enough extra time to the project schedule
+                                to deal with the risks</p>
+                    
+                        <h5>8. Test Deliverables</h5>
+                        <p>Test Deliverables is a list of all the documents, tools and other components that has to be developed and
+                            maintained in support of the testing effort.</p>
+                        <p>There are different test deliverables at every phase of the software development lifecycle.</p>
+                        <p>Test deliverables are provided <b>before</b> testing phase.</p>
+                        <ul>
+                            <li>Test plans document.</li>
+                            <li>Test cases documents</li>
+                            <li>Test Design specifications.</li>
+                        </ul>
+                        <p>Test deliverables are provided <b>during</b> the testing</p>
+                        <ul>
+                            <li>Test Scripts</li>
+                            <li>Simulators.</li>
+                            <li>Test Data</li>
+                            <li>Test Traceability Matrix</li>
+                            <li>Error logs and execution logs.</li>
+                        </ul>
+                    
+                        <p>Test deliverables are provided <b>after</b> the testing cycles is over</p>
+                        <ul>
+                            <li>Test Results/reports</li>
+                            <li>Defect Report</li>
+                            <li>Installation/ Test procedures guidelines</li>
+                            <li>Release notes</li>
+                        </ul>
+                    
+                    
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="conclusion">Conclusion</h4>
+                        <p>In Software Engineering, software release goes through Test Strategy documents from time to time to map the progress
+                            of testing in the right direction. When the release date is close many of these activities will be skipped, it is
+                            desirable to discuss with team members whether cutting down any particular activity will help for release without
+                            any potential risk.
+                        </p>               
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="links_used">Links used</h4>
+                        <ol>
+                        <li><a href="https://www.guru99.com/how-to-create-test-strategy-document.html">How to create test strategy document<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://tryqa.com/what-is-test-strategy-types-of-strategies-with-examples/">What is test strategy & types of strategies with examples<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://katalon.com/resources-center/blog/test-strategy">Test strategy<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.nearform.com/blog/how-to-write-software-test-strategy-document/">How to write test strategy document<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.wearedragonfly.co/news/7-types-of-test-strategy">Seven types of test strategy<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        </ol>            
+                    </div>
+
+                </section>
+
+            </main>
+
+            <!--side-section-->
+            <aside class="side-section">
+                <h3>Navigation</h3>
+
+                <ul class="side-section-nav">
+                    <li><a href="#test_plan_definition" rel="test_plan_definition">Test Plan Definition</a></li>
+                    <li><a href="#test_planning_at_sdlc_phases" rel="test_planning_at_sdlc_phases">Test Planning At SDLC Phases</a></li>
+                    <li><a href="#components_of_a_plan_document" rel="components_of_a_plan_document">Components Of A Plan Document</a></li>
+                    <li><a href="#test_planning" rel="test_planning">Test Planning</a></li>
+                    <li><a href="#test_execution_plan" rel="test_execution_plan">Test Execution Plan</a></li>
+                    <li><a href="#test_plan_&_test_execution_comparison" rel="test_plan_&_test_execution_comparison">Test Plan & Test Execution Comparison</a></li>
+                    <li><a href="#how_to_write_a_test_plan" rel="how_to_write_a_test_plan">How To Write A Test Plan</a></li>
+                    <li><a href="#conclusion" rel="conclusion">Conclusion</a></li>
+                    <li><a href="#links_used" rel="links_used">Links Used</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <!--footer-section-1-->
+            <ul class="footer-section">
+                <li>
+                    <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+                    <a>346-804-34-64</a>
+                </li>
+                <!--footer-section-2-->
+                <li>
+                    <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h2>
+                    <a href="mailto: gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
+                </li>
+                <!--footer-section-3-->
+                <li>
+                    <h2>Follow Me</h2>
+                    <a href="https://www.linkedin.com/in/ivan-gavrikov-43a340234/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <!--footer-section-4-->
+                <li>
+                    <h2>2023 - Ivan Gavrikov</h2>
+                    <a href="../ivan-qa/index.html">Quality Assurance Specialist</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

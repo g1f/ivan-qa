@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ivan Gavrikov &#8211; Projects &#8211; Test Strategy</title>
+    <!--Meta-->
+    <meta charset=utf-8>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ivan-qa/favicon-apple-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ivan-qa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ivan-qa/favicon-16x16.png">
+    <!--Plugins CSS-->
+    <!--font-awesome-version 4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/main-style.css">
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/projects-page.css">
+</head>
+
+<body id="top">
+    <!--back-to-top-->
+    <a href="#top" rel="back-to-top">
+        <div class="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </a>
+    <!--page-wrapper-->
+    <div class="projects-page-wrapper">
+        <div class="top-wrapper">
+            <!--theme-switcher-->
+            <div class="dark-mode-section">
+                <button class="btn-dark-mode">Dark Mode</button>
+            </div>
+            <script src="../../ivan-qa/scripts/dark-mode.js"></script>
+            <!--top-section-->
+            <div class="top-section">
+                <!--header-->
+                <header>
+                    <div class="person-info">
+                        <h1 class="name"><a href="../../ivan-qa/index.html"><i class="fa fa-user-o"
+                                    aria-hidden="true"></i>Ivan
+                                Gavrikov</a></h1>
+                        <h2 class="position">QA Specialist</h2>
+                    </div>
+                </header>
+
+                <!--nav-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="../../ivan-qa/resume.html">Resume</li></a>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/projects.html">Projects</li></a>
+
+                        <li>|</li>
+
+                        <li><a href="https://github.com/g1f">GitHub</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/feedback.html">Feedback</li></a>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--main-nav-menu-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../ivan-qa/index.html">Main</a></li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="../../ivan-qa/projects.html">Projects</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <li>Test Strategy</li>
+            </ul>
+        </nav>
+        <!--main-wrapper-->
+        <div class="main-wrapper">
+            <!--main-section-->
+            <main class="main-section">
+                <section class="main-section-item">
+                    <div class="meta">
+                        <h3>Test Strategy</h3>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="test_strategy_definition">Test Strategy Definition</h4>
+                        <p>By ISTQB glossary the definition of a test strategy is – a high-level description of the test
+                            levels to be performed
+                            and the testing within those levels for an organization or programme (one or more projects).
+                        </p>
+                        <p>
+                            The process of writing a test strategy is more about thinking about risk factors within the
+                            project and planning to
+                            mitigate those risks, rather than ticking boxes to show that all types of testing have been
+                            included.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="types_of_test_strategies">Types of test strategies</h4>
+                        <ol>
+                            <li>Analytical strategy</li>
+                            <li>Model based strategy</li>
+                            <li>Methodical strategy</li>
+                            <li>Standards or process compliant strategy</li>
+                            <li>Reactive strategy</li>
+                            <li>Consultative strategy</li>
+                            <li>Regression averse strategy</li>
+                        </ol>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>1. Analytical strategy</h5>
+                        <p>An analytical test strategy is the most common strategy, it might be based on requirements
+                            (in user acceptance
+                            testing, for example), specifications (in system or component testing), or risks (in a
+                            proper risk-based testing
+                            strategy).
+                        </p>
+                        <p>
+                            In a more agile approach, it might be based on none of those, but a common understanding of
+                            user stories, or even a
+                            mind-map. The point is not the form of the test basis, but that there is a specific test
+                            basis for the release that
+                            is analyzed to form a set of tests.
+                        </p>
+                        <p>
+                            So, in case of testing based on requirements, requirements are analyzed to derive the test
+                            conditions. Then tests
+                            are designed, implemented and executed to meet those requirements.
+                            Even the results are recorded with respect to requirements, like requirements tested and
+                            passed, those that were
+                            tested but failed and those requirements which are not fully tested, etc.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>2. Model based strategy</h5>
+                        <p>An increasingly popular strategy is a model-based test strategy. This combines
+                            specification-based testing with
+                            structure-based testing to create some model of how the software should work. This might be
+                            a diagram that shows
+                            the user route taken through a website, or a diagram that shows how different technical
+                            components integrate, or
+                            both!
+                        </p>
+                        <p>
+                            This is a really interesting strategy because it allows for the best tool support. Creating
+                            a machine-readable
+                            model of the application, allows tools to generate manual or automated tests.
+                        </p>
+                        <p>
+                            The models are also developed according to existing software, hardware, data speeds,
+                            infrastructure, etc.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>3. Methodical Test Strategies</h5>
+                        <p>A methodical test strategy is when you use a standard test basis for different applications.
+                        </p>
+                        <p>
+                            This might be for instance, because you test payments and the payment scheme provides a set
+                            of mandatory tests for a particular type of transaction in system testing. Or, it might be
+                            because you are doing application security testing and want to leverage the industry
+                            experience baked into the OWASP Application Security Testing framework. In case of
+                            maintenance testing, a checklist describing important functions, their attributes, etc. is
+                            sufficient to perform the tests.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>4. Standards or process compliant strategy</h5>
+                        <p>Standards compliant test strategies are where you use industry standards to decide what to test.
+                        </p>
+                        <p>
+                            This is most likely where you are in a specific regulated sector, like self-driving cars, or aviation, where
+                            there are specific standards you have to meet for testing. For example, code coverage in system testing might be
+                            a requirement, or testing specific scenarios in user acceptance testing.
+                        </p>
+                        <p>
+                            In the case of a project following Scrum Agile technique, testers will create its complete test strategy,
+                            starting from identifying test criteria, defining test cases, executing tests, report status etc. around each
+                            user stories.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>5. Reactive Test Strategies</h5>
+                        <p>Reactive test strategies are where you decide what to test when you receive the software. This can happen in
+                            exploratory testing, where things you observe on your testing journey drive further tests. So testing is based
+                            on defects found in actual system.
+                        </p>
+                        <p>
+                            Another example is metamorphic testing of machine learning, which you could argue is reactive as one test
+                            depends on the next.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>6.	Consultative strategy</h5>
+                        <p>The name suggests, this testing technique uses consultations from key stakeholders as input to decide the scope
+                            of test conditions as in the case of user directed testing.
+                        </p>
+                        <p>
+                            Sure, there’s scenarios where the functionality was too complex for me to understand and I had to ask other
+                            people about how to test, but I still applied test design techniques to what they said in my system testing.
+                        </p>
+                        <p>
+                            The testers may then use different techniques like testing pair wise or equivalence partitioning techniques
+                            depending upon priority of the items in the provided lists.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>7. Regression averse strategy</h5>
+                        <p>A regression-averse strategy is one where you just make sure nothing has broken since the last release and ignore
+                            the changes. There is a focus on reducing regression risks for functional or non-functional product parts. For
+                            example an infrastructure replacement where nothing is expected to change.
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="test_strategy_in_sdlc">Test Strategy in SDLC</h4>
+                        <p>A regression-averse strategy is one where you just make sure nothing has broken since the last release and ignore
+                        the changes. There is a focus on reducing regression risks for functional or non-functional product parts. For
+                        example an infrastructure replacement where nothing is expected to change.
+                        </p>
+                        <img src="../images/articles/test-strategy-in-sdlc.png" alt="Test strategy in software development lifecycle">
+                        <h5>What should be included?</h5>
+                        <p>The key components of a good test strategy document are as follows:</p>
+                        <ol>
+                            <li>Test objectives and their scope</li>
+                            <li>Key business-led quality requirements</li>
+                            <li>Possible risk factors</li>
+                            <li>Test deliverables</li>
+                            <li>Testing tools</li>
+                            <li>Responsibilities</li>
+                            <li>Tracking and reporting of issues</li>
+                            <li>Configuration and change management</li>
+                            <li>Test environment requirements</li>
+                        </ol>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="sample_test_strategy_document">Sample Test Strategy Document</h4>
+                        <h5>1. Scope</h5>
+                        <p>The testing will be performed on the web application which includes the following functionalities:
+                        </p>
+                        <ul>
+                            <li>User registration and account authentication</li>
+                            <li>Account transactions and transfers</li>
+                            <li>Possible risk factors</li>
+                            <li>Test deliverables</li>
+                            <li>Testing tools</li>
+                            <li>Responsibilities</li>
+                            <li>Tracking and reporting of issues</li>
+                            <li>Configuration and change management</li>
+                            <li>Test environment requirements</li>
+                        </ul>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>2. Test Approach</h5>
+                        <p>The testing approach for the web application will include the following steps:
+                        </p>
+                        <p><strong>Test planning:</strong> The testing team will review the requirements and develop a test plan that
+                                outlines the testing scope, objectives, and timelines specific to functionalities.</p>
+                        <p><strong>Test design:</strong> The testing team will develop test cases and test scenarios based on the
+                                requirements and user stories. Test data will be identified, and test environments will be set up.</p>
+                        <p><strong>Test execution:</strong> The test cases will be executed using manual and automated testing techniques.
+                                The testing team will report and track defects, and retest fixed defects.</p>
+                        <p><strong>Test reporting:</strong> The testing team will prepare and share test reports that summarize the testing
+                                progress, the number of defects, and the overall quality of the application.</p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>3. Testing Types</h5>
+                        <p>The following testing types will be performed during the testing of the web application:
+                        </p>
+                        <p><strong>Functional testing:</strong> This type of testing ensures that the application functions correctly
+                            according to the requirements. It includes the testing of user registration, account transactions,
+                            balance inquiries, bill payments, and loan applications.</p>
+                        <p><strong>Usability testing:</strong> This type of testing focuses on user experience, ease of use, and user
+                            interface design specific to operations.</p>
+                        <p><strong>Performance testing:</strong> This type of testing evaluates the system's responsiveness, stability, and
+                            scalability under different load conditions for transactions (eg. if we test banking application).</p>
+                        <p><strong>Security testing: </strong> This type of testing ensures that the application is secure from
+                            unauthorized access, data breaches, and other security threats.</p>
+                        <p><strong>Compatibility testing: </strong> This type of testing checks if the application functions
+                            correctly across different browsers, devices, and operating systems.</p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>4. Testing Tools</h5>
+                        <p>There are several important tools used in almost every testing project:
+                        </p>
+                        <ul>
+                            <li>Test management tools</li>
+                            <li>Test automation tools</li>
+                            <li>Performance testing tools</li>
+                            <li>Security testing tools</li>
+                            <li>Code quality and static analysis tools</li>
+                            <li>Test data management tools</li>
+                            <li>Continuous integration and continuous delivery (CI/CD) tools</li>
+                            <li>Defect tracking tools</li>
+                            <li>Test environment management tools</li>
+                            <li>Usability testing tools</li>
+                            <li>Visual testing tools</li>  
+                        </ul>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>5. Hardware - Software Configuration</h5>
+                        <p>The testing will be conducted on the web application across the following hardware and software
+                            configurations (based on the user and traffic analytics provided by the web development team or marketing team):
+                        </p>
+                        <p><b>Operating systems:</b> Windows, macOS, Linux<br>
+                            <b>Browsers:</b> Chrome, Firefox, Safari<br>
+                            <b>Database systems:</b> MySQL, Oracle, SQL Server
+                        </p>
+                    </div>
+
+                    <div class="article-section">
+                        <h5>6. Reporting</h5>
+                        <p>The testing team will prepare and provide the following reports for the web application.
+                        </p>
+                        <p><b>Test Cases Execution Report:</b> Provides information on the execution of test cases, including:</p>
+                        <ul>
+                            <li>Pass/fail status</li>
+                            <li>Test case IDs</li>
+                            <li>Associated defects or issues encountered during testing</li>
+                        </ul>
+                        <p><b>Defect Report:</b> Contains details about the defects or issues discovered during testing, including:</p>
+                        <ul>
+                            <li>Description</li>
+                            <li>Severity</li>
+                            <li>Priority</li>
+                            <li>Steps to reproduce</li>
+                            <li>Current status (open, resolved, closed)</li>
+                        </ul>
+                        <p><b>Test Summary Report:</b> Offers an overview of the testing activities conducted, including:</p>
+                        <ul>
+                            <li>Number of test cases executed</li>
+                            <li>Pass/fail rates</li>
+                            <li>Test coverage achieved</li>
+                            <li>Overall assessment of the application's quality</li>
+                        </ul>
+                        <p><b>Test Progress Report:</b> Tracks the progress of testing activities throughout the project, including:</p>
+                        <ul>
+                            <li>Planned versus actual test execution</li>
+                            <li>Remaining work</li>
+                            <li>Milestones achieved</li>
+                            <li>Risks or issues encountered</li>
+                        </ul>
+                        <p><b>Test Coverage Report:</b> Provides insights into the extent of testing coverage achieved, including:</p>
+                        <ul>
+                            <li>Areas of the application tested</li>
+                            <li>Types of testing performed</li>
+                            <li>Gaps or areas requiring additional testing</li>
+                        </ul>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="test_strategy_vs_test_plan">Test Strategy vs Test Plan</h4>
+                        <table>
+                            <tr>
+                                <th>Comparison area</th>
+                                <th>Test Planning</th>
+                                <th>Test Execution</th>
+                            </tr>
+                            <tr>
+                                <td><b>Purpose</b></td>
+                                <td>Provides a high-level approach, objectives, and scope of testing for a software project</td>
+                                <td>Specifies detailed instructions, procedures, and specific tests to be conducted</td>
+                            </tr>
+                            <tr>
+                                <td><b>Focus</b></td>
+                                <td>Testing approach, test levels, types, and techniques</td>
+                                <td>Detailed test objectives, test cases, test data, and expected results</td>
+                            </tr>
+                            <tr>
+                                <td><b>Audience</b></td>
+                                <td>Stakeholders, project managers, senior testing team members</td>
+                                <td>Testing team members, test leads, testers, and stakeholders involved in testing</td>
+                            </tr>
+                            <tr>
+                                <td><b>Scope</b></td>
+                                <td>Entire testing effort across the project</td>
+                                <td>Specific phase, feature, or component of the software</td>
+                            </tr>
+                            <tr>
+                                <td><b>Level of Detail</b></td>
+                                <td>Less detailed and more abstract</td>
+                                <td>Highly detailed, specifying test scenarios, cases, scripts, and data</td>
+                            </tr>
+                            <tr>
+                                <td><b>Flexibility</b></td>
+                                <td>Allows flexibility in accommodating changes in project requirements</td>
+                                <td>Relatively rigid and less prone to changes during the testing phase</td>
+                            </tr>
+                            <tr>
+                                <td><b>Longevity</b></td>
+                                <td>Remains relatively stable throughout the project lifecycle</td>
+                                <td>Evolves throughout the testing process, incorporating feedback and adjustments</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="conclusion">Conclusion</h4>
+                        <p>In Software Engineering, software release goes through Test Strategy documents from time to time to map the progress
+                            of testing in the right direction. When the release date is close many of these activities will be skipped, it is
+                            desirable to discuss with team members whether cutting down any particular activity will help for release without
+                            any potential risk.
+                        </p>               
+                    </div>
+
+                    <div class="article-section">
+                        <h4 id="links_used">Links used</h4>
+                        <ol>
+                        <li><a href="https://www.guru99.com/how-to-create-test-strategy-document.html">How to create test strategy document<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://tryqa.com/what-is-test-strategy-types-of-strategies-with-examples/">What is test strategy & types of strategies with examples<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://katalon.com/resources-center/blog/test-strategy">Test strategy<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.nearform.com/blog/how-to-write-software-test-strategy-document/">How to write test strategy document<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.wearedragonfly.co/news/7-types-of-test-strategy">Seven types of test strategy<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        </ol>            
+                    </div>
+
+                </section>
+
+            </main>
+
+            <!--side-section-->
+            <aside class="side-section">
+                <h3>Navigation</h3>
+
+                <ul class="side-section-nav">
+                    <li><a href="#test_strategy_definition" rel="test_strategy_definition">Test Strategy Definition</a></li>
+                    <li><a href="#types_of_test_strategies" rel="types_of_test_strategies">Types Of Test Strategies</a></li>
+                    <li><a href="#test_strategy_in_sdlc" rel="test_strategy_in_sdlc">Test Strategy In SDLC</a></li>
+                    <li><a href="#sample_test_strategy_document" rel="sample_test_strategy_document">Sample Test Strategy Document</a></li>
+                    <li><a href="#test_strategy_vs_test_plan" rel="test_strategy_vs_test_plan">Test Strategy Vs Test Plan</a></li>
+                    <li><a href="#conclusion" rel="conclusion">Conclusion</a></li>
+                    <li><a href="#links_used" rel="links_used">Links Used</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <!--footer-section-1-->
+            <ul class="footer-section">
+                <li>
+                    <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+                    <a>346-804-34-64</a>
+                </li>
+                <!--footer-section-2-->
+                <li>
+                    <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h2>
+                    <a href="mailto: gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
+                </li>
+                <!--footer-section-3-->
+                <li>
+                    <h2>Follow Me</h2>
+                    <a href="https://www.linkedin.com/in/ivan-gavrikov-43a340234/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <!--footer-section-4-->
+                <li>
+                    <h2>2023 - Ivan Gavrikov</h2>
+                    <a href="../ivan-qa/index.html">Quality Assurance Specialist</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
