@@ -7,7 +7,13 @@
 
 .index-wrapper .main-section {
   width: 65%;
-  padding: 30px;
+  padding: 2%;
+}
+
+.index-wrapper .main-section-item {
+  float: left;
+  width: 100%;
+  margin-bottom: 1.5em;
 }
 
 /*about*/
@@ -18,7 +24,7 @@
 .avatar {
   display: block;
   float: left;
-  margin: 0 30px 30px 0;
+  margin: 0 2% 2% 0;
 }
 
 .avatar,
@@ -27,7 +33,7 @@
 }
 
 .link-section {
-  margin: 30px;
+  margin: 2%;
   text-align: center;
 }
 
@@ -54,23 +60,14 @@
 }
 
 .project-links:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
   box-shadow: var(--color-btn-shadow);
 }
 
 /*gallery*/
-.gallery-section {
-  display: block;
-}
 
 .gallery-section h2 {
   font-size: 2em;
-}
-
-.displayed-img {
-  min-height: 700px;
-  max-width: 960px;
-  border-radius: 30px;
 }
 
 .dislayed-img-wrapper {
@@ -78,10 +75,17 @@
   align-items: center;
   justify-content: center;
   max-height: 700px;
-  width: 100%;
+  width: auto;
   box-shadow: var(--color-section-shadow);
-  margin-bottom: 30px;
+  margin-bottom: 2%;
   border-radius: 15px;
+}
+
+.displayed-img {
+  min-height: 700px;
+  max-width: 960px;
+  width: auto;
+  border-radius: 30px;
 }
 
 .thumb-bar {
@@ -92,7 +96,8 @@
 }
 
 .thumb-bar img {
-  width: 18%;
+  max-width: 18%;
+  width: auto;
   cursor: pointer;
   box-shadow: var(--color-section-shadow);
   border-radius: 15px;

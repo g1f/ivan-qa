@@ -2,6 +2,7 @@
 :root {
   --bg-color-body: #ffffff;
   --bg-color-header-resume: #f0f0f0;
+  --bg-color-table: #f0f0f0;
   --bg-color-btn-back-to-top: #f0f0f0;
   --bg-color-links: #66bb6a;
   --bg-color-links-hover: #72e878;
@@ -11,6 +12,7 @@
   --color-font: #3a3a3a;
   --color-font-description: #6f7680;
   --color-links: #242424;
+  --color-p-links: #3b75cc;
   --color-btn-links: #242424;
   --color-calc-notice: #b4352c;
 
@@ -25,6 +27,7 @@
 .dark-mode {
   --bg-color-body: #161625;
   --bg-color-header-resume: #f0f0f0;
+  --bg-color-table: #f0f0f0;
   --bg-color-btn-back-to-top: #3e3e6a;
   --bg-color-links: #66bb6a;
   --bg-color-links-hover: #72e878;
@@ -34,6 +37,7 @@
   --color-font: #e1e1ff;
   --color-font-description: #ceceff;
   --color-links: #fcfcfc;
+  --color-p-links: #3b75cc;
   --color-btn-links: #242424;
   --color-calc-notice: #b68b88;
 
@@ -55,7 +59,7 @@ body {
   background-color: var(--bg-color-body);
   color: var(--color-font);
   font-family: Verdana, Arial, "Times New Roman";
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 3%;
 }
 
@@ -85,7 +89,6 @@ body {
 }
 
 /*headings*/
-h1,
 h2,
 h3,
 h4,
@@ -96,13 +99,14 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5em;
+  color: var(--heading-color);
   text-transform: uppercase;
+  font-size: 1.5em;
 }
 
 h2 {
   font-size: 1.4em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.5em;
 }
 
 h3 {
@@ -116,22 +120,24 @@ h4 {
 }
 
 h5 {
-  font-size: 1em;
+  font-size: 1.1em;
   margin-bottom: 0.3em;
 }
 
 h6 {
-  font-size: 0.8em;
+  font-size: 1em;
   margin-bottom: 0.3em;
 }
 
 /*lists / para/ icons / imgs / hyperlinks*/
 p {
-  font-size: 1em;
+  margin-bottom: 0.4em;
 }
 
-li {
+ul
+,.ol {
   list-style-type: none;
+  list-style-position: inside;
 }
 
 i {
@@ -153,7 +159,8 @@ img {
 .index-wrapper
 ,.resume-wrapper
 ,.projects-wrapper
-,.feedback-wrapper {
+,.feedback-wrapper
+,.projects-page-wrapper {
   margin: 0 auto;
   width: 90%;
   word-wrap: break-word;
@@ -162,7 +169,7 @@ img {
 
 /*top-section-wrapper*/
 .top-wrapper {
-  padding: 30px;
+  padding: 2%;
   border-bottom: var(--color-border-top-bottom);
 }
 
@@ -171,12 +178,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 0.3em;
+  padding: 0.5em;
 }
 
 .dark-mode-section button {
-  padding: 10px;
-  margin-left: 10px;
+  padding: 0.7em;
+  margin-left: 0.3em;
   border-radius: 50px;
   border: none;
   background-color: var(--bg-color-links);
@@ -201,46 +208,28 @@ img {
 
 /*top-navigation*/
 .top-nav {
-  padding: 8px;
-}
-
-/*main-breadcrumbs-nav*/
-.main-nav {
-  padding: 10px 30px 10px 30px;
-}
-
-.main-nav i {
-  padding: 0 1% 0 1%;
-}
-
-.main-nav ul {
-  padding: 10px;
-}
-
-.main-nav ul li {
-  display: inline;
-  color: var(--color-font-description);
+  padding: 0.5em;
 }
 
 .top-nav ul li {
   display: inline-block;
   border: solid 2px transparent;
-  padding-bottom: 5px;
-  font-size: 1.2em;
+  margin-bottom: 0.3em;
+  font-size: 1.4em;
 }
 
 .top-nav ul a:hover {
   border-bottom: 2px solid var(--color-font-description);
-  padding-bottom: 5px;
+  padding-bottom: 0.3em;
 }
 
 .top-nav ul a:active {
-  border-bottom: 5px solid var(--color-font-description);
+  border-bottom: 0.4em solid var(--color-font-description);
 }
 
 /*header-common*/
 .person-info {
-  padding: 10px;
+  padding: 0.5em;
 }
 
 .avatar {
@@ -249,17 +238,35 @@ img {
 
 .name,
 .position {
-  font-size: 1.2em;
+  font-size: 1.4em;
   display: inline-block;
   margin: 0;
-  padding: 0 5px 0 5px;
+  margin-bottom: 0.3em;
 }
 
 .position {
   font-weight: 400;
 }
 
+/*main-breadcrumbs-nav*/
+.main-nav {
+  padding: 1% 2% 1% 2%;
+}
 
+.main-nav i {
+  padding: 0 1% 0 1%;
+}
+
+.main-nav ul {
+  padding: 0.5em;
+}
+
+.main-nav ul li {
+  display: inline;
+  color: var(--color-font-description);
+}
+
+/*feedback-page*/
 .feedback-wrapper .main-wrapper {
   display: flex;
   align-items: center;
@@ -267,14 +274,14 @@ img {
 }
 
 .feedback-wrapper .main-section {
-  padding: 30px;
+  padding: 2%;
 }
 
 /*footer*/
 .footer {
   overflow: hidden;
   clear: both;
-  padding: 30px;
+  padding: 2%;
   border-top: var(--color-border-top-bottom);
 }
 
@@ -285,6 +292,7 @@ img {
 
 .footer-section li {
   display: inline-block;
-  padding: 10px;
+  text-align: left;
+  padding: 0.5em;
   min-width: 23%;
 }
