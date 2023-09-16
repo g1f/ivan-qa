@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ivan Gavrikov &#8211; Projects &#8211; Test Report</title>
+    <!--Meta-->
+    <meta charset=utf-8>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ivan-qa/favicon-apple-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ivan-qa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ivan-qa/favicon-16x16.png">
+    <!--Plugins CSS-->
+    <!--font-awesome-version 4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/main.css">
+</head>
+
+<body id="top">
+    <!--back-to-top-->
+    <a href="#top" rel="back-to-top">
+        <div class="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </a>
+    <!--page-wrapper-->
+    <div class="projects-wrapper">
+        <div class="top-wrapper">
+            <!--theme-switcher-->
+            <div class="dark-mode-section">
+                <button class="btn-dark-mode">Dark Mode</button>
+            </div>
+            <script src="../../ivan-qa/scripts/dark-mode.js"></script>
+            <!--top-section-->
+            <div class="top-section">
+                <!--header-->
+                <header>
+                    <div class="person-info">
+                        <h1 class="name"><a href="../../ivan-qa/index.html"><i class="fa fa-user-o"
+                                    aria-hidden="true"></i>Ivan
+                                Gavrikov</a></h1>
+                        <h2 class="position">QA Specialist</h2>
+                    </div>
+                </header>
+
+                <!--nav-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="../../ivan-qa/resume.html">Resume</li></a>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/projects.html">Projects</li></a>
+
+                        <li>|</li>
+
+                        <li><a href="https://github.com/g1f">GitHub</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/feedback.html">Feedback</li></a>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--main-nav-menu-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../ivan-qa/index.html">Main</a></li>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <a href="../../ivan-qa/projects.html">Projects</a>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <li>Test Report</li>
+            </ul>
+        </nav>
+        <!--main-wrapper-->
+        <div class="main-wrapper">
+            <!--main-section-->
+            <main class="main-section">
+                <section class="main-section-item">
+                    <div class="meta">
+                        <h3>Test Report</h3>
+                    </div>
+
+                    <article class="article-section">
+                        <h4 id="test_case_definition">Test Report Definition</h4>
+                        <p>By ISTQB glossary the definition of a test report is a document summarizing testing activities and results. It also contains an evaluation of the corresponding test items against exit criteria.
+                        </p>
+                    </article>
+
+                    <article class="article-section">
+                        <h4 id="why_do_we_need_a_test_report">Why Do We Need A Test Report?</h4>
+                        <p>The typical benefits of a test report include:</p>
+                        <img src="../images/articles/test-report-benefits.png">
+                    </article>
+
+                    <article class="article-section">
+                        <h4 id="how_to_make_a_good_test_report">How to make a good Test Report?</h4>
+                        
+                        <h5>What does a test report contain?</h5>
+                        <img src="../images/articles/test-report-contain.png">
+                        
+                        <h6>Project Information</h6>
+                        <p>All information of the project such as the project name, product name, and version should be described in the test report. For example, the information of Guru99Bank project will be as follows</p>
+                        <img src="../images/articles/test-report-project-information.png">
+                        
+                        <h6>Test Objective</h6>
+                        <p>As mentioned in Test Planning tutorial, Test Report should include the objective of each round of testing, such as Unit Test, Performance Test, System Test …Etc.</p>
+                        <h6>Test Summary</h6>
+                        <p>This section includes the summary of testing activity in general. Information detailed here includes</p>
+                        <ul>
+                            <li>The number of test cases executed</li>
+                            <li>The numbers of test cases pass</li>
+                            <li>The numbers of test cases fail</li>
+                            <li>Pass percentage</li>
+                            <li>Fail percentage</li>
+                            <li>Comments</li>
+                        </ul>
+                        <p>This information should be displayed <b>visually</b> by using <b>color indicator</b>, <b>graph,</b> and <b>highlighted table</b>.</p>
+                        
+                        <h6>Defect</h6>
+                        <p>One of the most important information in Test Report is defect. The report should contain following information</p>
+                        <ul>
+                            <li>Total number of bugs</li>
+                            <li>Status of bugs (open, closed, responding)</li>
+                            <li>Number of bugs open, resolved, closed</li>
+                            <li>Breakdown by severity and priority</li>
+                        </ul>
+                        <p>Like test summary, you can include some simple metrics like Defect density, % of fixed defects.</p>
+                        <p>The project team sent you the Defect information as following</p>
+                        <ul>
+                            <li>Defect density is 20 defects/1000 lines of code average</li>
+                            <li>90% defects fixed in total</li>
+                            <li>The detail of the bugs</li>
+                        </ul>
+                        <p>You can represent the data as following graph</p>
+                        <img src="../images/articles/test-report-graph.png">
+                        
+                        <h5>Tips to write a good test report</h5>
+                        <img src="../images/articles/test-report-good-example.png">
+                        <p>A good Test Report should be:</p>
+                        <ul>
+                            <li><b>Detail: </b>You should provide a detailed description of the testing activity, show which testing you have performed. Do not put the abstract information into the report, because the reader will not understand what you said.</li>
+                            <li><b>Clear: </b>All information in the test report should be short and clearly understandable.</li>
+                            <li><b>Standard: </b>The Test Report should follow the standard template. It is easy for stakeholder to review and ensure the consistency between test reports in many projects.</li>
+                            <li><b>Specific: </b>Do not write an essay about the project activity. Describe and summarize the test result specification and focus on the main point.</li>
+                        </ul>
+                    
+                    </article>
+
+                    <article class="article-section">
+                        <h4 id="test_report_example">Test Report Example</h4>
+                        <img src="../images/articles/test-report-example.png">
+                    </article>
+
+                    <article class="article-section">
+                        <h4 id="links_used">Links used</h4>
+                        <ol>
+                        <li><a href="https://istqb-glossary.page/test-case/">ISTQB Glossary - Test Report<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.guru99.com/how-test-reports-predict-the-success-of-your-testing-project.html">Test Summary Reports Tutorial: Learn with Example & Template<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        </ol>            
+                    </article>
+
+                </section>
+
+            </main>
+
+            <!--side-section-->
+            <aside class="side-section">
+                <h3>Navigation</h3>
+
+                <ul class="side-section-nav">
+                    <li><a href="#test_case_definition" rel="test_case_definition">Test Case Definition</a></li>
+                    <li><a href="#why_do_we_need_a_test_report" rel="why_do_we_need_a_test_report">Why Do We Need A Test Report?</a></li>
+                    <li><a href="#how_to_make_a_good_test_report" rel="how_to_make_a_good_test_report">How to make a good Test Report?</a></li>
+                    <li><a href="#test_report_example" rel="test_report_example">Test Report Example</a></li>
+                    <li><a href="#links_used" rel="links_used">Links Used</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <!--footer-section-1-->
+            <ul class="footer-section">
+                <li>
+                    <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+                    <a>346-804-34-64</a>
+                </li>
+                <!--footer-section-2-->
+                <li>
+                    <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h2>
+                    <a href="mailto: gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
+                </li>
+                <!--footer-section-3-->
+                <li>
+                    <h2>Follow Me</h2>
+                    <a href="https://www.linkedin.com/in/ivan-gavrikov-43a340234/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <!--footer-section-4-->
+                <li>
+                    <h2>2023 - Ivan Gavrikov</h2>
+                    <a href="../ivan-qa/index.html">Quality Assurance Specialist</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

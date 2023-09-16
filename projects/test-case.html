@@ -84,47 +84,209 @@
 
                     <article class="article-section">
                         <h4 id="test_case_definition">Test Case Definition</h4>
-                        <p>ISTQB defines a test case as A set of input values, execution preconditions, expected results and execution postconditions, developed for a particular objective or test condition, such as to exercise a particular program path or to verify compliance with a specific requirement.
-                            </p>
-                        <p>Test cases are step-by-step instructions to the tester to perform validation of specific aspects of the system or application functionality.
+                        <p>ISTQB defines a test case as A set of input values, execution preconditions, expected results and execution
+                            postconditions, developed for a particular objective or test condition, such as to exercise a particular program
+                            path or to verify compliance with a specific requirement.
+                        </p>
+                        <p>Test cases are step-by-step instructions to the tester to perform validation of specific aspects of the system or
+                            application functionality.
                         </p>
                     </article>
-
+                    
                     <article class="article-section">
                         <h4 id="why_do_we_need_test_case">Why Do We Need A Test Case?</h4>
-
+                        <p>Test case should help us to check the product without a knowledge of all documentation. Well-written test-case
+                            would save a lot of time and effort for testers.</p>
                     </article>
-
+                    
                     <article class="article-section">
                         <h4 id="test_case_attributes">Test Case Attributes</h4>
-
+                        <p>Every test case should include:</p>
+                        <ul>
+                            <li><b>Unique test-case ID </b>– required for comfortable organizing and navigation in our test-suit.</li>
+                            <li><b>Title/Name </b>– main idea of the test case. Short description of the essence. </li>
+                            <li><b>Preconditions </b>– description of the conditions that are not directly related to functionality being
+                                tested, but have to be done. For example, the user has to sign up before leaving the comment on the website.
+                                It means for “Creating comment” the test-case must have done with the preconditions: “user is signed in” and
+                                “user is authorized”. </li>
+                            <li><b>Steps </b>– the description of the actions to lead us to the expected result.</li>
+                            <li><b>Expected result </b>- it is the result that we expected to observe after the test case is done.</li>
+                        </ul>
+                        <p>It is not necessary, but preferably to add into a test-case an attribute <b>“edit history” </b>– it can ease your
+                            work. A concise journal of changes with fields: who, how, when was editing the test-case.</p>
                     </article>
-
+                    
                     <article class="article-section">
                         <h4 id="what_to_know_before_test_case_creation">What To Know Before A Test Case Creation?</h4>
-
+                        <p>At first, every completed test-case gives us one of the three results:</p>
+                        <ol>
+                            <li><b>Positive result: </b>if the actual result is equal to the expected result;</li>
+                            <li><b>Negative result: </b>if the actual result is not equal to the expected result. In that case the bug was
+                                found;</li>
+                            <li><b>Blocked to test: </b>if after completing one of the steps in the test-case we are faced with the issue
+                                and further testing is not possible. In this case we have found an issue as well.</li>
+                        </ol>
+                        <p>Second, a test-case should check only one functionality and there has to be only one expected result for it.</p>
+                    </article>
+                    
+                    <article class="article-section">
+                        <h4 id="what_a_test_case_should_not_includes">What A Test Case Should Not Includes</h4>
+                        <h5>1. Dependencies of another test cases</h5>
+                        <p>You should avoid using dependencies because every connected test-case can be deleted or modified and, in that
+                            case, it can be hard to understand how to pass the test-case with links to other test cases.
+                            Also, if dependencies were used, you might have the wrong feeling that the tested product is tested enough
+                            because of the passed dependent test cases.
+                        </p>
+                        <h5>2. Unclear description of the steps and expected result</h5>
+                        <p>The second point is already answered by itself. If steps and expected result description are not clear enough it
+                            would be a blocker to pass the test-case.</p>
+                        <h5>3. Lack of necessary information to pass the test-case</h5>
+                        <p>A test-case must have all the information to successfully pass it. For example, if we check any website’s login
+                            page, we need to have a login and password. Otherwise, we will not have the ability to pass the login scenario
+                            and other test cases can be blocked either.</p>
+                    
+                        <h5>4. Excessive number of details</h5>
+                        <p>You should avoid adding excessive descriptions to your test-case. For example, if we check the ability to create
+                            a comment, we don’t have to write where the login fields are. Redundant information complicates the passing of a
+                            test-case.</p>
                     </article>
 
                     <article class="article-section">
-                        <h4 id="what_a_test_case_should_not_includes">What A Test Case Should Not Includes</h4>
-
+                        <h4 id="best_practice_for_writing_good_test_case">Best Practice for writing good Test Case</h4>
+                        <img src="../images/articles/test-case-best-practice.png">
+                        <h5>1. Test Cases need to be simple and transparent:</h5>
+                        <p>Create test cases that are as simple as possible. They must be clear and concise as the author of the test case
+                            may not execute them.</p>
+                        <p>Use assertive language like go to the home page, enter data, click on this and so on. This makes the
+                            understanding the test steps easy and tests execution faster.</p>
+                        <h5>2. Create Test Case with End User in Mind</h5>
+                            The ultimate goal of any software project is to create test cases that meet customer requirements and is easy to
+                            use and operate. A tester must create test cases keeping in mind the end user perspective</p>
+                        <h5>3. Avoid test case repetition.</h5>
+                            <p>Do not repeat test cases. If a test case is needed for executing some other test case, call the test case by its
+                            test case id in the pre-condition column</p>
+                        <h5>4. Do not Assume</h5>
+                            <p>Do not assume functionality and features of your software application while preparing test
+                            case. Stick to the Specification Documents.</p>
+                        <h5>5. Ensure 100% Coverage</h5>
+                            <p>Make sure you write test cases to check all software requirements mentioned in the
+                            specification document. Use Traceability Matrix to ensure no functions/conditions is left untested.</p>
+                        <h5>6. Test Cases must be identifiable.</h5>
+                            <p>Name the test case id such that they are identified easily while
+                            tracking defects or identifying a software requirement at a later stage.</p>
+                        <h5>7. Implement Testing Techniques</h5>
+                            <p>It is not possible to check every possible condition in your software
+                                application. Software Testing techniques help you select a few test cases with the maximum possibility of
+                                finding a defect.
+                            <ul>
+                                <li><b>Boundary Value Analysis (BVA): </b>As the name suggests it’s the technique that defines the testing of
+                                    boundaries for a specified range of values.</li>
+                                <li><b>Equivalence Partition (EP): </b>This technique partitions the range into equal parts/groups that tend to
+                                    have the same behavior.</li>
+                                <li><b>State Transition Technique: </b>This method is used when software behavior changes from one state to
+                                    another following particular action.</li>
+                                <li><b>Error Guessing Technique: </b>This is guessing/anticipating the error that may arise while doing manual
+                                    testing. This is not a formal method and takes advantages of a tester’s experience with the application</li>
+                            </ul>
+                            </p>
+                        <h5>8. Self-cleaning</h5>
+                            <p>The test case you create must return the Test Environment to the pre-test state and should
+                            not render the test environment unusable. This is especially true for configuration testing.</p>
+                        <h5>9. Repeatable and self-standing</h5>
+                            <p>The test case should generate the same results every time no matter who
+                            tests it</p>
+                        <h5>10. Peer Review.</h5>
+                            <p>After creating test cases, get them reviewed by your colleagues. Your peers can uncover
+                            defects in your test case design, which you may easily miss.</p>
+                        <h5>While drafting a test case to include the following information</h5>
+                        <p>
+                        <ul>
+                            <li>The description of what requirement is being tested</li>
+                            <li>The explanation of how the system will be tested</li>
+                            <li>The test setup like a version of an application under test, software, data files, operating system,
+                                hardware, security access, physical or logical date, time of day, prerequisites such as other tests and any
+                                other setup information pertinent to the requirements being tested</li>
+                            <li>Inputs and outputs or actions and expected results</li>
+                            <li>Any proofs or attachments</li>
+                            <li>Use active case language</li>
+                            <li>Test Case should not be more than 15 steps</li>
+                            <li>An automated test script is commented with inputs, purpose and expected results</li>
+                            <li>The setup offers an alternative to pre-requisite tests</li>
+                            <li>With other tests, it should be an incorrect business scenario order</li>
+                        </ul>
+                        </p>
+                    
                     </article>
 
                     <article class="article-section">
                         <h4 id="test_case_examples">Test Case Examples</h4>
+                        <p>Below is a format of a standard login Test cases example.</p>
+                        <table>
+                            <th>Test Case ID</th>
+                            <th>Test Case Description</th>
+                            <th>Test Steps</th>
+                            <th>Test Data</th>
+                            <th>Expected Results</th>
+                            <th>Actual Results</th>
+                            <th>Pass/Fail</th>
 
+                            <tr>
+                                <td>TU01</td>
+                                <td>Check Customer Login with valid Data</td>
+                                <td>Go to a website<br>
+                                    Enter UserId<br>
+                                    Enter Password<br>
+                                    Click Submit</td>
+                                <td>Userid = admin01 Password = pass01</td>
+                                <td>User should Login into an application</td>
+                                <td>As Expected</td>
+                                <td>Pass</td>
+                            </tr>
+
+                            <tr>
+                                <td>TU02</td>
+                                <td>Check Customer Login with invalid Data</td>
+                                <td>Go to a website<br>
+                                    Enter UserId<br>
+                                    Enter Password<br>
+                                    Click Submit</td>
+                                <td>Userid = admin01 Password = nopass01</td>
+                                <td>User should not Login into an application</td>
+                                <td>As Expected</td>
+                                <td>Pass</td>
+                            </tr>
+
+                        </table>
+                        
                     </article>
 
                     <article class="article-section">
-                        <h4 id="conclusion">Conclusion</h4>
-                        <p>Conclusion
-                        </p>               
+                        <h4 id="conclusion">Test Management Tools</h4>
+                        <p>Test management tools are the automation tools that help to manage and maintain the Test Cases. Main Features of a test case management tool are
+                        </p>
+                        <ol>
+                            <li><b>For documenting Test Cases: </b>With tools, you can expedite Test Case creation with use of templates</li>
+                            <li><b>Execute the Test Case and Record the results: </b>Test Case can be executed through the tools and results obtained can be easily recorded.</li>
+                            <li><b>Automate the Defect Tracking: </b>Failed tests are automatically linked to the bug tracker, which in turn can be assigned to the developers and can be tracked by email notifications.</li>
+                            <li><b>Traceability: </b>Requirements, Test cases, Execution of Test cases are all interlinked through the tools, and each case can be traced to each other to check test coverage.</li>
+                            <li><b>Protecting Test Cases:</b> Test cases should be reusable and should be protected from being lost or corrupted due to poor version control. Test Case Management Tools offer features like<br><br>
+                                <ul>
+                                    <li>Naming and numbering conventions</li>
+                                    <li>Versioning</li>
+                                    <li>Read-only storage</li>
+                                    <li>Controlled access</li>
+                                    <li>Off-site backup</li>
+                                </ul>
+                            </li>
+                        </ol>             
                     </article>
 
                     <article class="article-section">
                         <h4 id="links_used">Links used</h4>
                         <ol>
                         <li><a href="https://istqb-glossary.page/test-case/">ISTQB Glossary - Test Case<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://habr.com/ru/articles/246463/">Writing an effective Test Case<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.guru99.com/test-case.html/">How to Write Test Cases in Software Testing with Examples<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
                         </ol>            
                     </article>
 
@@ -142,8 +304,9 @@
                     <li><a href="#test_case_attributes" rel="test_case_attributes">Test Case Attributes</a></li>
                     <li><a href="#what_to_know_before_test_case_creation" rel="what_to_know_before_test_case_creation">What To Know Before A Test Case Creation?</a></li>
                     <li><a href="#what_a_test_case_should_not_includes" rel="what_a_test_case_should_not_includes">What A Test Case Should Not Includes</a></li>
+                    <li><a href="#best_practice_for_writing_good_test_case" rel="best_practice_for_writing_good_test_case">Best Practice For Writing Good Test Case</a></li>
                     <li><a href="#test_case_examples" rel="test_case_examples">Test Case Examples</a></li>
-                    <li><a href="#conclusion" rel="conclusion">Conclusion</a></li>
+                    <li><a href="#conclusion" rel="conclusion">Test Management Tools</a></li>
                     <li><a href="#links_used" rel="links_used">Links Used</a></li>
                 </ul>
             </aside>

@@ -84,45 +84,272 @@
 
                     <article class="article-section">
                         <h4 id="test_case_definition">Bug Report Definition</h4>
-                        <p>A document reporting on any flaw in a component or system that can cause the component or system to fail to perform its required function.
-                            </p>
+                        <p>By ISTQB glossary the definition of a bug report is a document reporting on any flaw in a component or system that can cause the component or system to fail to perform its required function.
+                        </p>
                     </article>
 
                     <article class="article-section">
                         <h4 id="why_do_we_need_a_bug_report">Why Do We Need A Bug Report?</h4>
+                        <p>Bug Report is an important document in STLC that offers various advantages to the testing team. It keeps track of all the defects, multiple bugs, errors, and other discrepancies found during software testing and reports them.</p>
+                        <p>The purpose of this post-testing documentation is to provide information to the concerned team of professionals about the level of bugs encountered during the testing process.</p>
+                    </article>
+
+                    <article class="article-section">
+                        <h4 id="how_to_write_bug_report">How to Write Bug Report</h4>
+                        <p>There is no exact bug report template, as it depends upon your bug-tracking system. Your template might be different.</p>
+                        <p>However, the following common fields are always needed when you want to write a bug report:</p>
+                        <ul>
+                            <li>Bug id/ Title</li>
+                            <li>Severity and Priority</li>
+                            <li>Description</li>
+                            <li>Environment</li>
+                            <li>Steps to reproduce </li>
+                            <li>Expected result</li>
+                            <li>Actual result</li>
+                            <li>Attachments (screenshots, videos, text)</li>
+                        </ul>
+                        <p>Let’s look at all these bug-tacking components one by one:</p>
+                        
+                        <h5>1. Title/Bug ID</h5>
+                        <p>Every bug should be given a unique identification number. Bug reporting tools should be unique numbers for the newly raised bugs so we can easily identify the bug.</p>
+                        <p><b>Examples</b></p>
+                        <p><b>Bad: </b><i>“I can’t see the product when I again, tyrp it doesn’t.”</i></p>
+                        <ul>
+                            <li>Vague</li>
+                            <li>Aggressive</li>
+                            <li>Too wordy</li>
+                        </ul>
+                        <p>asks for a solution to be implemented.</p>
+                        <p><b>Good: </b><i>“CART – New items added to the cart that does not appear”.</i></p>
+                        <ul>
+                            <li>This kind of Title instantly locates the issue (CART)</li>
+                            <li>It focuses on the actual technical problem.</li>
+                        </ul>
+                        
+                        <h5>2. Bug Severity</h5>
+                        <p>Bug severity is a very important factor in the bug report. It describes the effect of the defect on the application’s performance.</p>
+                        <ul>
+                            <li><b>Blocker: </b>This error causes the app to fail.</li>
+                            <li><b>Major: </b>A critical error indicates a major change in the business logic.</li>
+                            <li><b>Minor: </b>An issue that doesn’t affect the application’s functionality but does affect the expected results.</li>
+                            <li><b>Trivial: </b>It does not affect the functionality or operation of the app. It could be a typographical error.</li>
+                        </ul>
+                        
+                        <h5>3. Bug Priority</h5>
+                        <p>Following is the general gradation to decide bug priority:</p>
+                        <ul>
+                            <li><b>High </b>It covers anything which affects the flow or blocks app usage.</li>
+                            <li><b>Medium: </b>It adversely affects the user experience.</li>
+                            <li><b>Minor: </b>All other errors like (typos, missing icons, layout issues, etc.).</li>
+                        </ul>
+                        
+                        <h5>4. Environment</h5>
+                        <p>A Bug can appear in a specific environment and not others. For example, sometimes a bug appears when running the website on Firefox, or an app malfunction only when running on an Android device and working fine on iPhone.</p>
+                        <p>These bug reports can only be identified with cross-browser or cross-device testing. So, when reporting the bug, QAs should be able to specify if the bug should be observed in one or more specific environments.</p>
+                        
+                        <h5>5. Summary</h5>
+                        <p>However, adding only the Title in the bug report does not serve the purpose. So, if your Title isn’t enough, you can add a short report summary.</p>
+                        <p>Your summary in as few words as possible including when and how the bug occurred. Your Title and bug description should also be used in searches, so you must ensure you have covered important keywords.</p>
+                        <h6>Examples:</h6>
+                        <ul>
+                            <li><b>Bad: </b>“I was trying to add stuff to the test, and nothing showed up when I did that or clicked on the button.”</li>
+                            <li><b>Good: </b>“When I tried adding [PRODUCT] to the shopping cart, but nothing happened when I clicked the 'add' button on the specific product overview webpage.”</li>
+                        </ul>
+
+                        <h5>6. Steps to reproduce</h5>
+                        <p>When reporting a bug, it is important to specify the steps to reproduce it. You should also include actions that may cause the bug. Here, don’t make any generic statements.</p>
+                        <p>Be specific on the steps to follow:</p>
+                        <p>Here, is an example of well-written procedure:</p>
+                        <p>Steps:</p>
+                        <ol>
+                            <li>Select product X1.</li>
+                            <li>Click on Add to cart.</li>
+                            <li>Click Remove to remove the product from the cart.</li>
+                        </ol>
+                        <h5>7. Expected result</h5>
+                        <p>In bug reports, describing the expected result per the technical task, test case outcomes design, or according to the tester’s opinion is important. All this helps developers to focus on quickly finding needed information.</p>
+                        
+                        <h6>For example:</h6>
+                        <p>Required fields should be highlighted in red after clicking the” Submit” button.</p>
+                        
+                        <h5>8. Actual Result</h5>
+                        <p>As it names suggests, this s field describes the actual effect of the bug. It is very important to write a clear description of the actual result.</p>
+                        
+                        <h6>For example:</h6>
+                        <p>Required fields are highlighted in green color after clicking the “Submit” button.</p>
+
+                        <h5>8. Attachments (screenshots and videos)</h5>
+                        <p>In bug reports, it is best practice to attach files to bug reports which makes it easier to perceive information when you need to display it visually:</p>
+                        <h6>For example:</h6>
+                        <ul>
+                            <li><b>Screenshot: </b>Screenshots can easily elaborate mistakes in the program; s convenient when the bug is highlighted with a specific annotation, circle, or arrow image.</li>
+                            <li><b>Video: </b>Sometimes, it is difficult to describe the bug in words, so it’s better to create a video so that developer can rectify the defect in the program.</li>
+                        </ul>
+
+                        <h5>10. Affected Version:</h5>
+                        <p>It is the affected software version where the bug is reported.</p>
+
+                        <h5>11. Fix Version:</h5>
+                        <p>It is the software version in which the bug is resolved. So when the QA who reported the bug, checks whether it is fixed, he uses the correct software version.</p>
+
+                        <h5>12. Target version:</h5>
+                        <p>The target version where a bug should be targeted to be fixed. So, when the development team works on fixing a bug, they mostly target a particular application version.</p>
+
+                        <h5>13. Date Closed:</h5>
+                        <p>It is the date when the bug is closed by the software testing team. Closing a bug is a vital and integral part of software testing.</p>
+
+                        <h5>14. Status:</h5>
+                        <p>When a new bug is created, its status should be open. After that, it goes through stages like In Progress, Fixed, Running, Reopen, etc.</p>
 
                     </article>
 
                     <article class="article-section">
-                        <h4 id="bug_report_attributes">Bug Report Attributes</h4>
+                        <h4 id="example_of_bug_report">Example of Bug Report</h4>
+                        <p>Here is a small example of a bug report:</p>
+                        <p>[MY ACCOUNT] Underline is displayed when mouseovering on the Update button.</p>
+                        <p><b>Description: </b>We need to remove the underline when mouseovering on the Update button in My Account section.</p>
+                        <p><b>Link: </b>http:\\test.website.com</p>
+                        <p><b>Browser/OS: </b>Chrome 25. OSX Yosemite 10.10.2</p>
+                        <p><b>Steps to reproduce:</b></p>
+                        <ol>
+                            <li>Go to www.test.com</li>
+                            <li>Login via login credentials</li>
+                            <li>Navigate to My Account</li>
+                            <li>Mouseover on the Update button</li>
+                        </ol>
+                        <p><b>Actual result: </b>there is an underline.</p>
+                        <p><b>Expected Result: </b>no underline.</p>
+                        <p><b>Login Data: </b>test@test.com / mysecretpass12</p>
 
                     </article>
 
                     <article class="article-section">
-                        <h4 id="what_to_know_before_reporting_a_bug">What To Know Before Reporting A Bug?</h4>
+                        <h4 id="my_bug_examples_by_type">My Bug Examples by Type</h4>
+                        <h5>Crash</h5>
+                        <p><b>Title: </b>[Windows 11] MP - Connecting to server leads to an error that can't be closed</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Launch the application and login</li>
+                            <li>Click on Start Playing tab</li>
+                            <li>Find any multiplayer project in gallery and select it</li>
+                            <li>Click "Play" button</li>
+                        </ol>
+                        <p><b>Expected Result: </b>The selected multiplayer project should load successfully.</p>
+                        <p><b>Actual Result: </b>The selected multiplayer project wasn't loaded.<br> 
+                            The window with an error can't be closed and leaded to the "hang" of the application.<br>
+                            User should force close the app to exit.</p>
+                        <p><b>Error Message: </b>Connection to MP Collectible 3, versionID:
+                            35937894-1bee-4aa4-bc99-a6780c00aced failed.</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Screen resolution: 1920x1080<br>
+                            In app resolution: 1920x1080<br>
+                            Windows zoom: 100%
+                        </p>
+                        <p><b>Device Model: </b>Lenovo Legion 5 (2021)</p>
+                        <p><b>Device Software Version: </b> Windows 11 22H2</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-crash.png"><img src="../images/articles/bug-report-crash.png" id="bug-type-img"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
 
-                    </article>
+                        <h5>Performance</h5>
+                        <p><b>Title: </b>[Windows 11/Chrome] On Demand - Long video keeps buffering in first minutes of playing</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>Click on "Sports" tab</li>
+                            <li>Select "Baseball" and click on any game (eg."Game 2 MEAC Baseball: Norfolk vs MESU (~3h game))</li>
+                            <li>Watch first minute of the video</li>
+                        </ol>
+                        <p><b>Expected Result: </b>No issues to start streaming and for the first minutes of video paying.</p>
+                        <p><b>Actual Result: </b>Long video keeps buffering in the first minutes of the playing.</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            1st game from Baseball tab also buffering. Seems to me it is general problem with long videos.
+                        </p>
+                        <p><b>Device Model: </b>Lenovo Legion 5 (2021)</p>
+                        <p><b>Device Software Version: </b> Windows 11 - 22H2 / Chrome 108.0.5359.125 (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-performance.png"><img src="../images/articles/bug-report-performance.png" id="bug-type-img"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
 
-                    <article class="article-section">
-                        <h4 id="what_a_bug_report_should_not_includes">What A Bug Report Should Not Includes</h4>
+                        <h5>Functional</h5>
+                        <p><b>Title: </b>Windows 10, Chrome - Search doesnt' work in "Who can see page"</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>Click on "+" near account name</li>
+                            <li>Type in search field valid name form the list of accounts</li>
+                        </ol>
+                        <p><b>Expected Result: </b>Search results should be presented after enter a valid name from the accounts list.</p>
+                        <p><b>Actual Result: </b>Search result is "no users to show" after entered valid name from the accounts list</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Login details: user / password<br>
+                        </p>
+                        <p><b>Device Model: </b>Laptop Lenovo 14 (2019)</p>
+                        <p><b>Device Software Version: </b> Windows 10 - Enterprise / Chrome - Version 117.0.5938.63 (Official Build) (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-functional.png"><img src="../images/articles/bug-report-functional.png" id="bug-type-img"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
 
-                    </article>
+                        <h5>Visual</h5>
+                        <p><b>Title: </b>Windows 10, Chrome - Pop-up info window is displayed behind number after hover a cursor on Chart</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>Scroll down to Open Opportunities section</li>
+                            <li>Hover cursor on the green Chart</li>
+                        </ol>
+                        <p><b>Expected Result: </b>When hovering mouse coursor on Chart the pop-up info window should be displayed in fornt of the number of the opened opportunities.</p>
+                        <p><b>Actual Result: </b>When hovering mouse coursor on Chart the pop-up info window is displayed behind the number of the opened opportunities</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Login details: user / password<br>
+                            Exact URL: *url-is-here*
+                        </p>
+                        <p><b>Device Model: </b>Laptop Lenovo 14 (2019)</p>
+                        <p><b>Device Software Version: </b> Windows 10 - Enterprise / Chrome - Version 117.0.5938.63 (Official Build) (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-functional.png"><img src="../images/articles/bug-report-functional.png" id="bug-type-img"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
 
-                    <article class="article-section">
-                        <h4 id="bug_report_examples">Bug Report Examples</h4>
+                        <h5>Content</h5>
+                        <p><b>Title: </b>Samsung Galaxy S22 5G - Registration - Confirmation text not translated to English</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>In country pop-up menu select United Kingdom</li>
+                            <li>Tap on "Head" button near the main logo</li>
+                            <li>Scroll down and tap "Register" button</li>
+                            <li>Enter your e-mail and tap "Go"/"Enter" on your keyboard</li>
+                            <li>Tap on "Create an account" button</li>
+                            <li>Scroll down to the end of the registration page</li>
+                        </ol>
+                        <p><b>Expected Result: </b>Confirmation text should be in english as per website language.</p>
+                        <p><b>Actual Result: </b>Confirmation text is on Italian</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Location and language: US/English.<br>
+                            Website language: GB/English
+                        </p>
+                        <p><b>Device Model: </b>Samsung Galaxy S22 5G</p>
+                        <p><b>Device Software Version: </b> Android 13 / Chrome - Version 117.0.5938.63 (Official Build) (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-visual.png"><img src="../images/articles/bug-report-visual.png" id="bug-type-img"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
 
-                    </article>
-
-                    <article class="article-section">
-                        <h4 id="conclusion">Conclusion</h4>
-                        <p>Conclusion
-                        </p>               
                     </article>
 
                     <article class="article-section">
                         <h4 id="links_used">Links used</h4>
                         <ol>
-                        <li><a href="https://istqb-glossary.page/test-case/">ISTQB Glossary - Test Case<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://istqb-glossary.page/test-case/">ISTQB Glossary - Bug Report<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.guru99.com/how-to-write-a-bug-report.html/">How to Write A Bug Report with Examples<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
                         </ol>            
                     </article>
 
@@ -137,11 +364,9 @@
                 <ul class="side-section-nav">
                     <li><a href="#test_case_definition" rel="test_case_definition">Test Case Definition</a></li>
                     <li><a href="#why_do_we_need_a_bug_report" rel="why_do_we_need_a_bug_report">Why Do We Need A Bug Report?</a></li>
-                    <li><a href="#bug_report_attributes" rel="bug_report_attributes">Bug Report Attributes</a></li>
-                    <li><a href="#what_to_know_before_reporting_a_bug" rel="what_to_know_before_reporting_a_bug">What To Know Before Reporting A Bug?</a></li>
-                    <li><a href="#what_a_bug_report_should_not_includes" rel="what_a_bug_report_should_not_includes">What A Bug Report Should Not Includes</a></li>
-                    <li><a href="#bug_report_examples" rel="bug_report_examples">Bug Report Examples</a></li>
-                    <li><a href="#conclusion" rel="conclusion">Conclusion</a></li>
+                    <li><a href="#how_to_write_bug_report" rel="how_to_write_bug_report">How to Write Bug Report</a></li>
+                    <li><a href="#example_of_bug_report" rel="example_of_bug_report">Example of Bug Report</a></li>
+                    <li><a href="#my_bug_examples_by_type" rel="my_bug_examples_by_type">My Bug Examples By Type</a></li>
                     <li><a href="#links_used" rel="links_used">Links Used</a></li>
                 </ul>
             </aside>
