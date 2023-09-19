@@ -469,7 +469,8 @@ table tr:nth-child(even) {
 
 .index-wrapper .vendors-section table th:hover
 ,.index-wrapper .vendors-section table td:hover {
-  background-color: var(--bg-color-table);
+  background-color: var(--bg-color-links);
+  transform: scale(1.03);
 }
 
 .index-wrapper .vendors-section table tr:nth-child(even) {
