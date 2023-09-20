@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ivan Gavrikov &#8211; Projects &#8211; Nu HTML Checker</title>
+    <!--Meta-->
+    <meta charset=utf-8>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ivan-qa/favicon-apple-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ivan-qa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ivan-qa/favicon-16x16.png">
+    <!--Plugins CSS-->
+    <!--font-awesome-version 4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/main.css">
+</head>
+
+<body id="top">
+    <!--back-to-top-->
+    <a href="#top" rel="back-to-top">
+        <div class="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </a>
+    <!--page-wrapper-->
+    <div class="projects-wrapper">
+        <div class="top-wrapper">
+            <!--theme-switcher-->
+            <div class="dark-mode-section">
+                <button class="btn-dark-mode">Dark Mode</button>
+            </div>
+            <script src="../../ivan-qa/scripts/dark-mode.js"></script>
+            <!--top-section-->
+            <div class="top-section">
+                <!--header-->
+                <header>
+                    <div class="person-info">
+                        <h1 class="name"><a href="../../ivan-qa/index.html"><i class="fa fa-user-o"
+                                    aria-hidden="true"></i>Ivan
+                                Gavrikov</a></h1>
+                        <h2 class="position">QA Specialist</h2>
+                    </div>
+                </header>
+
+                <!--nav-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="../../ivan-qa/resume.html">Resume</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="https://github.com/g1f">GitHub</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--main-nav-menu-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../ivan-qa/index.html">Main</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li>Nu HTML Checker</li>
+            </ul>
+        </nav>
+        <!--main-wrapper-->
+        <div class="main-wrapper">
+            <!--main-section-->
+            <main class="main-section">
+                <section class="main-section-item">
+                    <div class="meta">
+                        <h3>Nu HTML Checker</h3>
+                    </div>
+
+                    <article class="article-section">
+                        <h4 id="nu_checker_report">Nu HTML Checker Report</h4>
+                        <p>This tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change.
+                        </p>
+                        <p>We didn't upload our website to the hosting yet, so we can check it by upload the whole html file into the Nu Checker system.</p>
+                        <img src="../images/articles/nu-checker-upload.png" alt="How to upload files to Nu Checker">
+                        <p>The report provides us <b><i>Warning</i></b>and <b><i>Error</i></b>messages. The presented issues in this article is not comprehensive.</p>
+                        <p>Let's validate used tags and discuss some issues from it.</p>
+                        <img src="../images/articles/nu-checker-resume.html-report-before.png" alt="resume page report before fixing">
+                        <h5>1. Using lang="en" tag</h5>
+                        <img src="../images/articles/nu-report-eng-lang.png" alt="lang tag is missing issue">
+                        <p>In accordance to <a href="https://www.w3.org/International/techniques/authoring-html.en?open=language&open=textprocessing#textprocessing">internationalization techniques</a>
+                             we should use lang="en" tag at the beginning of the html tag to declare the default language for 'text processing' (ie. when language needs to be known for things such as font choice, styling, spell-checking, hyphentation, quote mark styling, etc.).
+                        </p>
+
+                        <h5>2. Element "a" not allowed as child of element "ul" in this context</h5>
+                        <img src="../images/articles/nu-report-a-not-allowed-as-child-ul.png" alt="hyperlink is not allowed as child of the ul element">
+                        <p>In accordance to <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element">standards of using "ul" tag</a>
+                            the "ul" element represents a list of items, where the order of the items is not important — that is, where changing the order would not materially change the meaning of the document.
+                            The items of the list are the "li" element child nodes of the "ul" element.
+                        </p>
+
+                        <h5>3. Duplicate ID "edu-link"</h5>
+                        <img src="../images/articles/nu-report-duplicate-id.png" alt="id should not be duplicated">
+                        <p>We must avoid using the same IDs. We can use classes instead.
+                        </p>
+
+                        <h5>4. Stray end tag</h5>
+                        <img src="../images/articles/nu-report-stray-end-tag.png" alt="stray end tag">
+                        <p>It could be challenging to manually check all webpages to avoid mistyping of the end tags. This type of the error helps us to find it faster.
+                        </p>
+
+                    </article>
+
+                    <article class="article-section">
+                        <h4 id="github_issue_creating_fixing_retesting">GitHub issue creating, fixing and retesting</h4>
+                        
+                        <h5>Issue creation</h5>
+                        <p>There is a link to the <a href="https://github.com/users/g1f/projects/1/views/2?pane=issue&itemId=39051543">GitHub issue</a> to fix all founded problems in our HTML.</p>
+                        <img src="../images/articles/nu-report-github-issue-example.png" alt="github issue example">
+                        
+                        <h5>Issue fixing</h5>
+                        <p>I were keep getting the last error while trying to fix the issue.</p>
+                        <img src="../images/articles/nu-checker-report-resume-fixing.jpg" alt="issue fixing ul element inside another ul">
+                        <p>I had to use a special order to create a nested list and made some fixes in CSS as well.</p>
+                        <img src="../images/articles/nu-checker-report-resume-fixing-2.jpg" alt="css commands for the issue fixing">
+
+                        <h5>Final report</h5>
+                        <p>After all fixings is done we can check if the issues are still presented on our webpage.</p>
+                        <img src="../images/articles/nu-checker-report-resume.html-report-after.png" alt="resume page report after fixing">
+                    </article>
+
+                    <article class="article-section">
+                        <h4 id="links_used">Links used</h4>
+                        <ol>
+                        <li><a href="https://validator.w3.org/nu/">Nu Html Checker<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.w3.org/">Materials and articles from W3.org website<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://html.spec.whatwg.org/">HTML living standard<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        </ol>            
+                    </article>
+
+                </section>
+
+            </main>
+
+            <!--side-section-->
+            <aside class="side-section">
+                <h3>Navigation</h3>
+
+                <ul class="side-section-nav">
+                    <li><a href="#nu_checker_report" rel="nu_checker_report">Nu HTML Checker Report</a></li>
+                    <li><a href="#github_issue_creating_fixing_retesting" rel="github_issue_creating_fixing_retesting">GitHub issue creating, fixing and retesting</a></li>
+                    
+                    <li><a href="#links_used" rel="links_used">Links Used</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <!--footer-section-1-->
+            <ul class="footer-section">
+                <li>
+                    <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+                    <a>346-804-34-64</a>
+                </li>
+                <!--footer-section-2-->
+                <li>
+                    <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h2>
+                    <a href="mailto:gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
+                </li>
+                <!--footer-section-3-->
+                <li>
+                    <h2>Follow Me</h2>
+                    <a href="https://www.linkedin.com/in/ivan-gavrikov-43a340234/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <!--footer-section-4-->
+                <li>
+                    <h2>2023 - Ivan Gavrikov</h2>
+                    <a href="../ivan-qa/index.html">Quality Assurance Specialist</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

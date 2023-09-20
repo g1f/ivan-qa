@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Ivan Gavrikov &#8211; Projects &#8211; Test Case</title>
@@ -45,11 +45,11 @@
                 <!--nav-->
                 <nav class="top-nav">
                     <ul>
-                        <li><a href="../../ivan-qa/resume.html">Resume</li></a>
+                        <li><a href="../../ivan-qa/resume.html">Resume</a></li>
 
                         <li>|</li>
 
-                        <li><a href="../../ivan-qa/projects.html">Projects</li></a>
+                        <li><a href="../../ivan-qa/projects.html">Projects</a></li>
 
                         <li>|</li>
 
@@ -57,8 +57,7 @@
 
                         <li>|</li>
 
-                        <li><a href="../../ivan-qa/feedback.html">Feedback</li></a>
-
+                        <li><a href="../../ivan-qa/feedback.html">Feedback</a></li>
                     </ul>
                 </nav>
             </div>
@@ -67,9 +66,9 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="../../ivan-qa/index.html">Main</a></li>
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                <a href="../../ivan-qa/projects.html">Projects</a>
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
                 <li>Test Case</li>
             </ul>
         </nav>
@@ -153,14 +152,14 @@
 
                     <article class="article-section">
                         <h4 id="best_practice_for_writing_good_test_case">Best Practice for writing good Test Case</h4>
-                        <img src="../images/articles/test-case-best-practice.png">
+                        <img src="../images/articles/test-case-best-practice.png" alt="test case best practice">
                         <h5>1. Test Cases need to be simple and transparent:</h5>
                         <p>Create test cases that are as simple as possible. They must be clear and concise as the author of the test case
                             may not execute them.</p>
                         <p>Use assertive language like go to the home page, enter data, click on this and so on. This makes the
                             understanding the test steps easy and tests execution faster.</p>
                         <h5>2. Create Test Case with End User in Mind</h5>
-                            The ultimate goal of any software project is to create test cases that meet customer requirements and is easy to
+                            <p>The ultimate goal of any software project is to create test cases that meet customer requirements and is easy to
                             use and operate. A tester must create test cases keeping in mind the end user perspective</p>
                         <h5>3. Avoid test case repetition.</h5>
                             <p>Do not repeat test cases. If a test case is needed for executing some other test case, call the test case by its
@@ -188,7 +187,6 @@
                                 <li><b>Error Guessing Technique: </b>This is guessing/anticipating the error that may arise while doing manual
                                     testing. This is not a formal method and takes advantages of a tester’s experience with the application</li>
                             </ul>
-                            </p>
                         <h5>8. Self-cleaning</h5>
                             <p>The test case you create must return the Test Environment to the pre-test state and should
                             not render the test environment unusable. This is especially true for configuration testing.</p>
@@ -198,37 +196,37 @@
                         <h5>10. Peer Review.</h5>
                             <p>After creating test cases, get them reviewed by your colleagues. Your peers can uncover
                             defects in your test case design, which you may easily miss.</p>
-                        <h5>While drafting a test case to include the following information</h5>
-                        <p>
-                        <ul>
-                            <li>The description of what requirement is being tested</li>
-                            <li>The explanation of how the system will be tested</li>
-                            <li>The test setup like a version of an application under test, software, data files, operating system,
+                            <p>While drafting a test case to include the following information</p>
+                            <ul>
+                                <li>The description of what requirement is being tested</li>
+                                <li>The explanation of how the system will be tested</li>
+                                <li>The test setup like a version of an application under test, software, data files, operating system,
                                 hardware, security access, physical or logical date, time of day, prerequisites such as other tests and any
                                 other setup information pertinent to the requirements being tested</li>
-                            <li>Inputs and outputs or actions and expected results</li>
-                            <li>Any proofs or attachments</li>
-                            <li>Use active case language</li>
-                            <li>Test Case should not be more than 15 steps</li>
-                            <li>An automated test script is commented with inputs, purpose and expected results</li>
-                            <li>The setup offers an alternative to pre-requisite tests</li>
-                            <li>With other tests, it should be an incorrect business scenario order</li>
-                        </ul>
-                        </p>
-                    
+                                <li>Inputs and outputs or actions and expected results</li>
+                                <li>Any proofs or attachments</li>
+                                <li>Use active case language</li>
+                                <li>Test Case should not be more than 15 steps</li>
+                                <li>An automated test script is commented with inputs, purpose and expected results</li>
+                                <li>The setup offers an alternative to pre-requisite tests</li>
+                                <li>With other tests, it should be an incorrect business scenario order</li>
+                            </ul>
+                            
                     </article>
 
                     <article class="article-section">
                         <h4 id="test_case_examples">Test Case Examples</h4>
                         <p>Below is a format of a standard login Test cases example.</p>
                         <table>
-                            <th>Test Case ID</th>
-                            <th>Test Case Description</th>
-                            <th>Test Steps</th>
-                            <th>Test Data</th>
-                            <th>Expected Results</th>
-                            <th>Actual Results</th>
-                            <th>Pass/Fail</th>
+                            <tr>
+                                <th>Test Case ID</th>
+                                <th>Test Case Description</th>
+                                <th>Test Steps</th>
+                                <th>Test Data</th>
+                                <th>Expected Results</th>
+                                <th>Actual Results</th>
+                                <th>Pass/Fail</th>
+                            </tr>
 
                             <tr>
                                 <td>TU01</td>
@@ -323,7 +321,7 @@
                 <!--footer-section-2-->
                 <li>
                     <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h2>
-                    <a href="mailto: gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
+                    <a href="mailto:gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
                 </li>
                 <!--footer-section-3-->
                 <li>
