@@ -125,32 +125,32 @@ h6 {
 h1 {
   color: var(--heading-color);
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin-bottom: 0.5em;
   text-transform: capitalize;
 }
 
 h3 {
-  font-size: 1.3em;
-  margin-bottom: 0.3em;
-}
-
-h4 {
   font-size: 1.2em;
   margin-bottom: 0.3em;
 }
 
-h5 {
+h4 {
   font-size: 1.1em;
   margin-bottom: 0.3em;
 }
 
-h6 {
+h5 {
   font-size: 1em;
+  margin-bottom: 0.3em;
+}
+
+h6 {
+  font-size: 0.9em;
   margin-bottom: 0.3em;
 }
 
@@ -223,6 +223,10 @@ table tr:nth-child(even) {
   width: 90%;
   word-wrap: break-word;
   box-shadow: var(--color-section-shadow);
+}
+
+.projects-wrapper {
+  width: 70%;
 }
 
 /*common-top-section-wrapper*/
@@ -336,21 +340,16 @@ table tr:nth-child(even) {
 }
 
 /*common-footer*/
-.footer {
+footer {
   overflow: hidden;
   clear: both;
   padding: 2%;
   border-top: var(--color-border-top-bottom);
 }
 
-.footer-section {
-  display: block;
-  text-align: center;
-}
-
 .footer-section li {
   display: inline-block;
-  text-align: left;
+  text-align: justify;
   padding: 0.5em;
   min-width: 23%;
 }
@@ -373,19 +372,23 @@ table tr:nth-child(even) {
 
 /*index-about*/
 .index-wrapper .about-section
-,.index-wrapper .link-section {
-  width: 85%;
+,.index-wrapper .core-skills {
+  margin-bottom: 3em;
+}
+
+.index-wrapper .about-section {
+  max-width: 70%;
 }
 
 .index-wrapper .link-section {
-  margin: 2%;
-  text-align: center;
+  text-align: left;
 }
 
 .index-wrapper .avatar {
   display: block;
   float: left;
-  margin: 0 2% 2% 0;
+  margin: 2% 2% 2% 0;
+  max-width: 30%;
 }
 
 .index-wrapper .avatar,
@@ -507,7 +510,7 @@ table tr:nth-child(even) {
 }
 
 /*resume-footer*/
-.resume-wrapper .footer {
+.resume-wrapper footer {
   overflow: hidden;
   clear: both;
   text-align: center;
@@ -650,14 +653,8 @@ table tr:nth-child(even) {
   padding: 0.5em;
 }
 
-.projects-wrapper .meta {
-  margin-bottom: 1.5em;
-}
-
-.projects-wrapper .meta h3 {
-  text-transform: capitalize;
+.projects-wrapper .main-section-item .meta h3 {
   color: var(--color-titles);
-  margin-bottom: 1em;
 }
 
 .projects-wrapper .main-section-item h3
@@ -673,7 +670,8 @@ table tr:nth-child(even) {
   margin-bottom: 1.2em;
 }
 
-.projects-wrapper .article-section p
+.projects-wrapper .main-section-item .meta
+,.projects-wrapper .article-section p
 ,.projects-wrapper .article-section ul
 ,.projects-wrapper .article-section ol
 ,.projects-wrapper .side-section-nav li
@@ -681,8 +679,8 @@ table tr:nth-child(even) {
   margin-bottom: 1em;
 }
 
-.projects-wrapper .article-section {
-  max-width: 85%;
+.projects-wrapper .main-section-item {
+  max-width: 95%;
 }
 
 .projects-wrapper .main-section-item ul li i
@@ -717,9 +715,12 @@ table tr:nth-child(even) {
   text-transform: capitalize;
 }
 
-.projects-wrapper .bug-type-img {
-  width: 50%;
-  align-items: center;
+.projects-wrapper .article-section-img {
+  max-height: 50%;
+}
+
+#lighthouse_report {
+  width: 100%;
 }
 
 /*-calculator-style*/
@@ -742,7 +743,7 @@ table tr:nth-child(even) {
 }
 
 .projects-wrapper .calc-buttons-section {
-  width: 50%;
+  width: 60%;
 }
 
 .projects-wrapper .calc-result-section {
