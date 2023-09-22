@@ -30,20 +30,20 @@ const imgCubeRoot = document.getElementById("img-cube-root");
 const imgCircleLength = document.getElementById("img-circle-length");
 
 //dark img paths
-let sqrImgPathDm = "//kotoffsky/web/ivan-landing/images/calc/dark-mode/sqr-512x512-dm.png";
-let cubeImgPathDm = "//kotoffsky/web/ivan-landing/images/calc/dark-mode/cube-512x512-dm.png";
-let factorialImgPathDm = "//kotoffsky/web/ivan-landing/images/calc/dark-mode/factorial-512x512-dm.png";
-let sqrRootImgPathDm = "//kotoffsky/web/ivan-landing/images/calc/dark-mode/sqr-root-512x512-dm.png";
-let cubeRootImgPathDm = "//kotoffsky/web/ivan-landing/images/calc/dark-mode/cube-root-512x512-dm.png";
-let circleLngthImgPathDm = "//kotoffsky/web/ivan-landing/images/calc/dark-mode/circle-length-512x512-dm.png";
+let sqrImgPathDm = "//kotoffsky/web/ivan-qa/images/calc/dark-mode/sqr-512x512-dm.png";
+let cubeImgPathDm = "//kotoffsky/web/ivan-qa/images/calc/dark-mode/cube-512x512-dm.png";
+let factorialImgPathDm = "//kotoffsky/web/ivan-qa/images/calc/dark-mode/factorial-512x512-dm.png";
+let sqrRootImgPathDm = "//kotoffsky/web/ivan-qa/images/calc/dark-mode/sqr-root-512x512-dm.png";
+let cubeRootImgPathDm = "//kotoffsky/web/ivan-qa/images/calc/dark-mode/cube-root-512x512-dm.png";
+let circleLngthImgPathDm = "//kotoffsky/web/ivan-qa/images/calc/dark-mode/circle-length-512x512-dm.png";
 
 //light img paths
-let sqrImgPath = "//kotoffsky/web/ivan-landing/images/calc/sqr-512x512.png";
-let cubeImgPath = "//kotoffsky/web/ivan-landing/images/calc/cube-512x512.png";
-let factorialImgPath = "//kotoffsky/web/ivan-landing/images/calc/factorial-512x512.png";
-let sqrRootImgPath = "//kotoffsky/web/ivan-landing/images/calc/sqr-root-512x512.png";
-let cubeRootImgPath = "//kotoffsky/web/ivan-landing/images/calc/cube-root-512x512.png";
-let circleLngthImgPath = "//kotoffsky/web/ivan-landing/images/calc/circle-length-512x512.png";
+let sqrImgPath = "//kotoffsky/web/ivan-qa/images/calc/sqr-512x512.png";
+let cubeImgPath = "//kotoffsky/web/ivan-qa/images/calc/cube-512x512.png";
+let factorialImgPath = "//kotoffsky/web/ivan-qa/images/calc/factorial-512x512.png";
+let sqrRootImgPath = "//kotoffsky/web/ivan-qa/images/calc/sqr-root-512x512.png";
+let cubeRootImgPath = "//kotoffsky/web/ivan-qa/images/calc/cube-root-512x512.png";
+let circleLngthImgPath = "//kotoffsky/web/ivan-qa/images/calc/circle-length-512x512.png";
 
 
 

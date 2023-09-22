@@ -7,14 +7,16 @@ const images = ['ISTQB-certificate.png'
                 , `php-certificate.jpeg`
                 , `SQL-certificate-intermediate.jpeg`
                 , `web-dev-certificate.jpeg`
-                , `codeless-test-automation-with-Selenium-IDE.png`];
+                , `codeless-test-automation-with-Selenium-IDE.png`
+                , `exploring-service-APIs-through-test-automation.png`];
 const alts = {
   'ISTQB.png' : 'ISTQB Foundation Level Certificate',
   'java-script-certificate-introdution.jpeg' : 'Sololearn Java Script Certificate Introdution',
   'php-certificate.jpeg' : 'Sololearn PHP Certificate',
   'SQL-certificate-intermediate.jpeg' : 'Sololearn SQL Certificate Intermediate',
   'web-dev-certificate.jpeg' : 'Sololearn Web development Certificate',
-  'codeless-test-automation-with-Selenium-IDE.png' : 'Codeless Test Automation With Selenium IDE.png'
+  'codeless-test-automation-with-Selenium-IDE.png' : 'Codeless Test Automation With Selenium IDE',
+  'exploring-service-APIs-through-test-automation.png' : 'Exploring Service APIs Through Test Automation'
 }
 
 /* Looping through images */
