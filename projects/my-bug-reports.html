@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ivan Gavrikov &#8211; Projects &#8211; Bug Report</title>
+    <!--Meta-->
+    <meta charset=utf-8>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ivan-qa/favicon-apple-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ivan-qa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ivan-qa/favicon-16x16.png">
+    <!--Plugins CSS-->
+    <!--font-awesome-version 4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/main.css">
+</head>
+
+<body id="top">
+    <!--back-to-top-->
+    <a href="#top" rel="back-to-top">
+        <div class="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </a>
+    <!--page-wrapper-->
+    <div class="projects-wrapper">
+        <div class="top-wrapper">
+            <!--theme-switcher-->
+            <div class="dark-mode-section">
+                <button class="btn-dark-mode">Dark Mode</button>
+            </div>
+            <script src="../../ivan-qa/scripts/dark-mode.js"></script>
+            <!--top-section-->
+            <div class="top-section">
+                <!--header-->
+                <header>
+                    <div class="person-info">
+                        <h1 class="name"><a href="../../ivan-qa/index.html"><i class="fa fa-user-o"
+                                    aria-hidden="true"></i>Ivan
+                                Gavrikov</a></h1>
+                        <h2 class="position">QA Specialist</h2>
+                    </div>
+                </header>
+
+                <!--nav-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="../../ivan-qa/resume.html">Resume</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="https://github.com/g1f">GitHub</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--main-nav-menu-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../ivan-qa/index.html">Main</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li>Bug Report</li>
+            </ul>
+        </nav>
+        <!--main-wrapper-->
+        <div class="main-wrapper">
+            <!--main-section-->
+            <main class="main-section">
+                <div class="main-section-item">
+                    <h3>My Bug Reports</h3>
+
+                    <section class="article-section">
+                        <h4 id="bug_type_crash">Crash</h4>
+                        <p><b>Title: </b>[Windows 11] MP - Connecting to server leads to an error that can't be closed</p>
+                        <p><b>Bug Severity: </b>Blocker</p>
+                        <p><b>Bug Priority: </b>High</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Launch the application and login</li>
+                            <li>Click on Start Playing tab</li>
+                            <li>Find any multiplayer project in gallery and select it</li>
+                            <li>Click "Play" button</li>
+                        </ol>
+                        <p><b>Expected Result: </b>The selected multiplayer project should load successfully.</p>
+                        <p><b>Actual Result: </b>The selected multiplayer project wasn't loaded.<br> 
+                            The window with an error can't be closed and leaded to the "hang" of the application.<br>
+                            User should force close the app to exit.</p>
+                        <p><b>Error Message: </b>Connection to MP Collectible 3, versionID:
+                            35937894-1bee-4aa4-bc99-a6780c00aced failed.</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Screen resolution: 1920x1080<br>
+                            In app resolution: 1920x1080<br>
+                            Windows zoom: 100%
+                        </p>
+                        <p><b>Device Model: </b>Lenovo Legion 5 (2021)</p>
+                        <p><b>Device Software Version: </b> Windows 11 22H2</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-crash.png"><img src="../images/articles/bug-report-crash.png" class="article-section-img" alt="Crash type bug"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
+
+                        <h4 id="bug_type_perfomance">Performance</h4>
+                        <p><b>Title: </b>[Windows 11/Chrome] On Demand - Long video keeps buffering in first minutes of playing</p>
+                        <p><b>Bug Severity: </b>Major</p>
+                        <p><b>Bug Priority: </b>Medium</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>Click on "Sports" tab</li>
+                            <li>Select "Baseball" and click on any game (eg."Game 2 MEAC Baseball: Norfolk vs MESU (~3h game))</li>
+                            <li>Watch first minute of the video</li>
+                        </ol>
+                        <p><b>Expected Result: </b>No issues to start streaming and for the first minutes of video paying.</p>
+                        <p><b>Actual Result: </b>Long video keeps buffering in the first minutes of the playing.</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            1st game from Baseball tab also buffering. Seems to me it is general problem with long videos.
+                        </p>
+                        <p><b>Device Model: </b>Lenovo Legion 5 (2021)</p>
+                        <p><b>Device Software Version: </b> Windows 11 - 22H2 / Chrome 108.0.5359.125 (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-performance.png"><img src="../images/articles/bug-report-performance.png" class="article-section-img" alt="Perfomance type bug"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
+
+                        <h4 id="lighthouse_report">Lighthouse Report</h4>
+                        <p>Let's check google.com website for the perfomance issues by using "Lighthouse" tab in Developer tools.</p>
+                        <img src="../images/articles/lighthouse-mini-report.png" alt="Lighthouse report example">
+                        <p><a href="../docs/lighthouse-total-report.pdf">There is a full-report in PDF format</a></p>
+
+                        <h4 id="bug_type_functional">Functional</h4>
+                        <p><b>Title: </b>Windows 10, Chrome - Search doesnt' work in "Who can see page"</p>
+                        <p><b>Bug Severity: </b>Major</p>
+                        <p><b>Bug Priority: </b>High</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>Click on "+" near account name</li>
+                            <li>Type in search field valid name form the list of accounts</li>
+                        </ol>
+                        <p><b>Expected Result: </b>Search results should be presented after enter a valid name from the accounts list.</p>
+                        <p><b>Actual Result: </b>Search result is "no users to show" after entered valid name from the accounts list</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Login details: user / password<br>
+                        </p>
+                        <p><b>Device Model: </b>Laptop Lenovo 14 (2019)</p>
+                        <p><b>Device Software Version: </b> Windows 10 - Enterprise / Chrome - Version 117.0.5938.63 (Official Build) (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-functional.png"><img src="../images/articles/bug-report-functional.png" class="article-section-img" alt="Functional type bug"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
+
+                        <h4 id="bug_type_visual">Visual</h4>
+                        <p><b>Title: </b>Windows 10, Chrome - Pop-up info window is displayed behind number after hover a cursor on Chart</p>
+                        <p><b>Bug Severity: </b>Minor</p>
+                        <p><b>Bug Priority: </b>Minor</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>Scroll down to Open Opportunities section</li>
+                            <li>Hover cursor on the green Chart</li>
+                        </ol>
+                        <p><b>Expected Result: </b>When hovering mouse coursor on Chart the pop-up info window should be displayed in fornt of the number of the opened opportunities.</p>
+                        <p><b>Actual Result: </b>When hovering mouse coursor on Chart the pop-up info window is displayed behind the number of the opened opportunities</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Login details: user / password<br>
+                            Exact URL: *url-is-here*
+                        </p>
+                        <p><b>Device Model: </b>Laptop Lenovo 14 (2019)</p>
+                        <p><b>Device Software Version: </b> Windows 10 - Enterprise / Chrome - Version 117.0.5938.63 (Official Build) (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-visual.png"><img src="../images/articles/bug-report-visual.png" class="article-section-img" alt="Visual type bug"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
+
+                        <h4 id="bug_type_content">Content</h4>
+                        <p><b>Title: </b>Samsung Galaxy S22 5G - Registration - Confirmation text not translated to English</p>
+                        <p><b>Bug Severity: </b>Minor</p>
+                        <p><b>Bug Priority: </b>Minor</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>In country pop-up menu select United Kingdom</li>
+                            <li>Tap on "Head" button near the main logo</li>
+                            <li>Scroll down and tap "Register" button</li>
+                            <li>Enter your e-mail and tap "Go"/"Enter" on your keyboard</li>
+                            <li>Tap on "Create an account" button</li>
+                            <li>Scroll down to the end of the registration page</li>
+                        </ol>
+                        <p><b>Expected Result: </b>Confirmation text should be in english as per website language.</p>
+                        <p><b>Actual Result: </b>Confirmation text is on Italian</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Location and language: US/English.<br>
+                            Website language: GB/English
+                        </p>
+                        <p><b>Device Model: </b>Samsung Galaxy S22 5G</p>
+                        <p><b>Device Software Version: </b> Android 13 / Chrome - Version 117.0.5938.63 (Official Build) (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-content.jpg"><img src="../images/articles/bug-report-content.jpg" class="article-section-img" alt="Content type bug"></a><br>
+                            <i>*some information is blurred due to NDA</i>  
+                        </p>
+
+                        <h4 id="bug_type_accessibility">Accessibility</h4>
+                        <p><b>Title: </b>Desktop - Dark-mode - Contrast of the link text doesn't meet the WCAG standard</p>
+                        <p><b>Bug Severity: </b>Major</p>
+                        <p><b>Bug Priority: </b>High</p>
+                        <p><b>Action Performed: </b></p>
+                        <ol>
+                            <li>Go to URL *url-is-here*</li>
+                            <li>Switch theme to dark-mode/li>
+                        </ol>
+                        <p><b>Expected Result: </b>Link text should be visible clearly and pass WCAG standard.</p>
+                        <p><b>Actual Result: </b>Link text is barely visible and doesn't meet WCAG standard.</p> 
+                        <p><b>Error Message: </b>No</p>
+                        <p><b>Additional Enviroment Info: </b><br><br>
+                            Location and language: US/English<br>
+                            Zoom: 100%
+                        </p>
+                        <p><b>Device Model: </b>Lenovo Legion 5 (2021)</p>
+                        <p><b>Device Software Version: </b> Windows 11 22H2 / Chrome - Version 117.0.5938.63 (Official Build) (64-bit)</p>
+                        <p><b>Attachments: </b><br><br>
+                            <a href="../images/articles/bug-report-accessibility.png"><img src="../images/articles/bug-report-accessibility.png" class="article-section-img" alt="Accessibility type bug"></a><br>  
+                        </p>
+
+                    </section>
+
+                    <section class="article-section">
+                        <h4 id="links_used">Links used</h4>
+                        <ol>
+                        <li><a href="https://istqb-glossary.page/test-case/">ISTQB Glossary - Bug Report<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.guru99.com/how-to-write-a-bug-report.html/">How to Write A Bug Report with Examples<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        </ol>            
+                    </section>
+
+                </div>
+
+            </main>
+
+            <!--side-section-->
+            <aside class="side-section">
+                <h3>Navigation</h3>
+
+                <ul class="side-section-nav">
+                    <li><a href="#bug_type_crash" rel="bug_type_crash">Crash</a></li>
+                    <li><a href="#bug_type_perfomance" rel="bug_type_perfomance">Perfomance</a></li>
+                    <li><a href="#lighthouse_report" rel="lighthouse_report">Lighthouse Report</a></li>
+                    <li><a href="#bug_type_functional" rel="bug_type_functional">Functional</a></li>
+                    <li><a href="#bug_type_visual" rel="bug_type_visual">Visual</a></li>
+                    <li><a href="#bug_type_content" rel="bug_type_content">Content</a></li>
+                </ul>
+            </aside>
+
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <!--footer-section-1-->
+            <ul class="footer-section">
+                <li>
+                    <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+                    <a>346-804-34-64</a>
+                </li>
+                <!--footer-section-2-->
+                <li>
+                    <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h2>
+                    <a href="mailto:gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
+                </li>
+                <!--footer-section-3-->
+                <li>
+                    <h2>Follow Me</h2>
+                    <a href="https://www.linkedin.com/in/ivan-gavrikov-43a340234/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <!--footer-section-4-->
+                <li>
+                    <h2>2023 - Ivan Gavrikov</h2>
+                    <a href="../ivan-qa/index.html">Quality Assurance Specialist</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>

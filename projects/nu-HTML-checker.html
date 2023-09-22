@@ -76,30 +76,41 @@
         <div class="main-wrapper">
             <!--main-section-->
             <main class="main-section">
-                <section class="main-section-item">
-                    <div class="meta">
-                        <h3>Nu HTML Checker</h3>
-                    </div>
+                <!--main-section-item-->
+                <div class="main-section-item">
+                    <h3>Nu HTML Checker</h3>
 
-                    <article class="article-section">
+                    <section class="article-section">
                         <h4 id="nu_checker_report">Nu HTML Checker Report</h4>
-                        <p>This tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change.
+                        <p>This tool is an ongoing experiment in better HTML checking, and its behavior remains subject
+                            to change.
                         </p>
-                        <p>We didn't upload our website to the hosting yet, so we can check it by upload the whole html file into the Nu Checker system.</p>
+                        <p>We didn't upload our website to the hosting yet, so we can check it by upload the whole html
+                            file into the Nu Checker system.</p>
                         <img src="../images/articles/nu-checker-upload.png" alt="How to upload files to Nu Checker">
-                        <p>The report provides us <b><i>Warning</i></b>and <b><i>Error</i></b>messages. The presented issues in this article is not comprehensive.</p>
+                        <p>The report provides us <b><i>Warning</i></b>and <b><i>Error</i></b>messages. The presented
+                            issues in this article is not comprehensive.</p>
                         <p>Let's validate used tags and discuss some issues from it.</p>
-                        <img src="../images/articles/nu-checker-resume.html-report-before.png" alt="resume page report before fixing">
+                        <img src="../images/articles/nu-checker-resume.html-report-before.png"
+                            alt="resume page report before fixing">
                         <h5>1. Using lang="en" tag</h5>
                         <img src="../images/articles/nu-report-eng-lang.png" alt="lang tag is missing issue">
-                        <p>In accordance to <a href="https://www.w3.org/International/techniques/authoring-html.en?open=language&open=textprocessing#textprocessing">internationalization techniques</a>
-                             we should use lang="en" tag at the beginning of the html tag to declare the default language for 'text processing' (ie. when language needs to be known for things such as font choice, styling, spell-checking, hyphentation, quote mark styling, etc.).
+                        <p>In accordance to <a
+                                href="https://www.w3.org/International/techniques/authoring-html.en?open=language&open=textprocessing#textprocessing">internationalization
+                                techniques</a>
+                            we should use lang="en" tag at the beginning of the html tag to declare the default language
+                            for 'text processing' (ie. when language needs to be known for things such as font choice,
+                            styling, spell-checking, hyphentation, quote mark styling, etc.).
                         </p>
 
                         <h5>2. Element "a" not allowed as child of element "ul" in this context</h5>
-                        <img src="../images/articles/nu-report-a-not-allowed-as-child-ul.png" alt="hyperlink is not allowed as child of the ul element">
-                        <p>In accordance to <a href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element">standards of using "ul" tag</a>
-                            the "ul" element represents a list of items, where the order of the items is not important — that is, where changing the order would not materially change the meaning of the document.
+                        <img src="../images/articles/nu-report-a-not-allowed-as-child-ul.png"
+                            alt="hyperlink is not allowed as child of the ul element">
+                        <p>In accordance to <a
+                                href="https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element">standards
+                                of using "ul" tag</a>
+                            the "ul" element represents a list of items, where the order of the items is not important —
+                            that is, where changing the order would not materially change the meaning of the document.
                             The items of the list are the "li" element child nodes of the "ul" element.
                         </p>
 
@@ -110,39 +121,48 @@
 
                         <h5>4. Stray end tag</h5>
                         <img src="../images/articles/nu-report-stray-end-tag.png" alt="stray end tag">
-                        <p>It could be challenging to manually check all webpages to avoid mistyping of the end tags. This type of the error helps us to find it faster.
+                        <p>It could be challenging to manually check all webpages to avoid mistyping of the end tags.
+                            This type of the error helps us to find it faster.
                         </p>
 
-                    </article>
+                    </section>
 
-                    <article class="article-section">
+                    <section class="article-section">
                         <h4 id="github_issue_creating_fixing_retesting">GitHub issue creating, fixing and retesting</h4>
-                        
+
                         <h5>Issue creation</h5>
-                        <p>There is a link to the <a href="https://github.com/users/g1f/projects/1/views/2?pane=issue&itemId=39051543">GitHub issue</a> to fix all founded problems in our HTML.</p>
+                        <p>There is a link to the <a
+                                href="https://github.com/users/g1f/projects/1/views/2?pane=issue&itemId=39051543">GitHub
+                                issue</a> to fix all founded problems in our HTML.</p>
                         <img src="../images/articles/nu-report-github-issue-example.png" alt="github issue example">
-                        
+
                         <h5>Issue fixing</h5>
                         <p>I were keep getting the last error while trying to fix the issue.</p>
-                        <img src="../images/articles/nu-checker-report-resume-fixing.jpg" alt="issue fixing ul element inside another ul">
+                        <img src="../images/articles/nu-checker-report-resume-fixing.jpg"
+                            alt="issue fixing ul element inside another ul">
                         <p>I had to use a special order to create a nested list and made some fixes in CSS as well.</p>
-                        <img src="../images/articles/nu-checker-report-resume-fixing-2.jpg" alt="css commands for the issue fixing">
+                        <img src="../images/articles/nu-checker-report-resume-fixing-2.jpg"
+                            alt="css commands for the issue fixing">
 
                         <h5>Final report</h5>
                         <p>After all fixings is done we can check if the issues are still presented on our webpage.</p>
-                        <img src="../images/articles/nu-checker-report-resume.html-report-after.png" alt="resume page report after fixing">
-                    </article>
+                        <img src="../images/articles/nu-checker-report-resume.html-report-after.png"
+                            alt="resume page report after fixing">
+                    </section>
 
-                    <article class="article-section">
+                    <section class="article-section">
                         <h4 id="links_used">Links used</h4>
                         <ol>
-                        <li><a href="https://validator.w3.org/nu/">Nu Html Checker<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.w3.org/">Materials and articles from W3.org website<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
-                        <li><a href="https://html.spec.whatwg.org/">HTML living standard<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
-                        </ol>            
-                    </article>
+                            <li><a href="https://validator.w3.org/nu/">Nu Html Checker<i class="fa fa-external-link"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.w3.org/">Materials and articles from W3.org website<i
+                                        class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                            <li><a href="https://html.spec.whatwg.org/">HTML living standard<i
+                                        class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        </ol>
+                    </section>
 
-                </section>
+                </div>
 
             </main>
 
@@ -152,8 +172,10 @@
 
                 <ul class="side-section-nav">
                     <li><a href="#nu_checker_report" rel="nu_checker_report">Nu HTML Checker Report</a></li>
-                    <li><a href="#github_issue_creating_fixing_retesting" rel="github_issue_creating_fixing_retesting">GitHub issue creating, fixing and retesting</a></li>
-                    
+                    <li><a href="#github_issue_creating_fixing_retesting"
+                            rel="github_issue_creating_fixing_retesting">GitHub issue creating, fixing and retesting</a>
+                    </li>
+
                     <li><a href="#links_used" rel="links_used">Links Used</a></li>
                 </ul>
             </aside>
