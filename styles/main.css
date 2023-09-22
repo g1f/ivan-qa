@@ -421,37 +421,39 @@ table tr:nth-child(even) {
 }
 
 /*index-gallery*/
+.index-wrapper .gallery-section {
+  width: inherit;
+}
+
 .index-wrapper .dislayed-img-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 700px;
-  width: auto;
+  max-height: 600px;
   box-shadow: var(--color-section-shadow);
   margin-bottom: 2%;
   border-radius: 15px;
 }
 
 .index-wrapper .displayed-img {
-  min-height: 700px;
-  max-width: 960px;
-  width: auto;
   border-radius: 30px;
 }
 
 .index-wrapper .thumb-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .index-wrapper .thumb-bar img {
   max-width: 18%;
-  width: auto;
+  margin: 1%;
   cursor: pointer;
   box-shadow: var(--color-section-shadow);
   border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*index-table-tools*/
