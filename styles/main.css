@@ -200,7 +200,7 @@ table a
 table th
 ,table td
 ,table tr {
-  padding: 1em;
+  padding: 0.8em;
   border: 1px solid var(--color-border-table);
 }
 
@@ -684,7 +684,8 @@ footer {
 }
 
 .projects-wrapper .main-section-item ul li i
-,.projects-wrapper .main-section-item ol li i {
+,.projects-wrapper .main-section-item ol li i
+,.projects-wrapper .main-section-item p i {
   margin-left: 0.3em;
   font-size: 0.7em;
   padding: 0;
@@ -721,6 +722,10 @@ footer {
 
 #lighthouse_report {
   width: 100%;
+}
+
+.projects-wrapper .test-scenario {
+  font-size: 0.7em;
 }
 
 /*-calculator-style*/
