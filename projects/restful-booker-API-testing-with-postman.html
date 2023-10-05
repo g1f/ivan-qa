@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ivan Gavrikov &#8211; Projects &#8211; Restful Booker API Testing with Postman</title>
+    <!--Meta-->
+    <meta charset=utf-8>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ivan-qa/favicon-apple-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ivan-qa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ivan-qa/favicon-16x16.png">
+    <!--Plugins CSS-->
+    <!--font-awesome-version 4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/main.css">
+</head>
+
+<body id="top">
+    <!--back-to-top-->
+    <a href="#top" rel="back-to-top">
+        <div class="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </a>
+    <!--page-wrapper-->
+    <div class="projects-wrapper">
+        <div class="top-wrapper">
+            <!--theme-switcher-->
+            <div class="dark-mode-section">
+                <button class="btn-dark-mode">Dark Mode</button>
+            </div>
+            <script src="../../ivan-qa/scripts/dark-mode.js"></script>
+            <!--top-section-->
+            <div class="top-section">
+                <!--header-->
+                <header>
+                    <div class="person-info">
+                        <h1 class="name"><a href="../../ivan-qa/index.html"><i class="fa fa-user-o"
+                                    aria-hidden="true"></i>Ivan
+                                Gavrikov</a></h1>
+                        <h2 class="position">QA Specialist</h2>
+                    </div>
+                </header>
+
+                <!--nav-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="../../ivan-qa/resume.html">Resume</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="https://github.com/g1f">GitHub</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--main-nav-menu-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../ivan-qa/index.html">Main</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li>Restful Booker API Testing with Postman</li>
+            </ul>
+        </nav>
+        <!--main-wrapper-->
+        <div class="main-wrapper">
+            <!--main-section-->
+            <main class="main-section">
+                <!--main-section-item-->
+                <div class="main-section-item">
+                    <h3>Restful Booker API Testing with Postman</h3>
+
+                    <section class="article-section">
+                        <h4 id="where_to_start">Where to start?</h4>
+                        <p>The API layer of any application is one of the most crucial software components. It is the
+                            channel which connects
+                            client to server (or one microservice to another), drives business processes, and provides
+                            the services which give
+                            value to users.
+                        </p>
+                        <p>Mike Cohn’s famous Test Pyramid places API tests at the service level (integration), which
+                            suggests that around 20%
+                            or more of all of our tests should focus on APIs (the exact percentage is less important and
+                            varies based on our
+                            needs).</p>
+
+                        <img src="../images/articles/api-test-strategy-mike-cohn-famous-test-pyramid.png"
+                            alt="Mike Cohn's famous test pyramid">
+
+                        <p>API tests are fast, give high ROI, and simplify the validation of business logic, security,
+                            compliance, and other
+                            aspects of the application. In cases where the API is a public one, providing end-users
+                            programmatic access to our
+                            application or services, API tests effectively become end-to-end tests and should cover a
+                            complete user story.
+                        </p>
+
+                        <p>The importance of API testing is obvious. Several methods and resources help with HOW to test
+                            APIs — manual testing,
+                            automated testing, test environments, tools, libraries, and frameworks. However, regardless
+                            of what you will use —
+                            Postman, supertest, pytest, JMeter, mocha, Jasmine, RestAssured, or any other tools of the
+                            trade — before coming up
+                            with any test method you need to determine what to test…
+                        </p>
+
+                    </section>
+
+
+
+                    <section class="article-section">
+                        <h4 id="main_aspects_to_test_our_API">Main aspects to test our API</h4>
+                        <p>Whether you’re thinking of test automation or manual testing, our functional test cases have
+                            the same <b>test actions</b>, are part of wider <b>test scenario categories</b>, and belong
+                            to three kinds of <b>test flows</b>.</p>
+
+                        <h5>API test actions</h5>
+                        <p>Each test is comprised of test actions. These are the individual actions a test needs to take
+                            per API test flow. For each API request, the test would need to take the following actions:
+                        </p>
+                        <ol>
+                            <li><b>Verify correct HTTP status code.</b> For example, creating a resource should return
+                                201 CREATED and unpermitted requests should return 403 FORBIDDEN, etc.</li>
+                            <li><b>Verify response payload.</b> Check valid JSON body and correct field names, types,
+                                and values — including in error responses.</li>
+                            <li><b>Verify response headers.</b> HTTP server headers have implications on both security
+                                and performance.</li>
+                            <li><b>Verify correct application state.</b> This is optional and applies mainly to manual
+                                testing, or when a UI or another interface can be easily inspected.</li>
+                            <li><b>Verify basic performance sanity.</b> If an operation was completed successfully but
+                                took an unreasonable amount of time, the test fails.</li>
+                        </ol>
+
+                        <h5>Test scenario categories</h5>
+                        <p>Our test cases fall into the following general test scenario groups:</p>
+                        <ul>
+                            <li>Basic positive tests (happy paths)</li>
+                            <li>Extended positive testing with optional parameters</li>
+                            <li>Negative testing with valid input</li>
+                            <li>Negative testing with invalid input</li>
+                            <li>Destructive testing</li>
+                            <li>Security, authorization, and permission tests (which are out of the scope of this post)
+                            </li>
+                        </ul>
+
+                        <p><b>Happy path</b> tests check basic functionality and the acceptance criteria of the API. We
+                            later extend positive tests to include optional parameters and extra functionality. The next
+                            group of tests is <b>negative testing</b> where we expect the application to gracefully
+                            handle problem scenarios with both valid user input (for example, trying to add an existing
+                            username) and invalid user input (trying to add a username which is null). <b>Destructive
+                                testing</b> is a deeper form of negative testing where we intentionally attempt to break
+                            the API to check its robustness (for example, sending a huge payload body in an attempt to
+                            overflow the system).</p>
+
+                        <h5>Test flows</h5>
+                        <p>Let’s distinguish between three kinds of test flows which comprise our test plan:</p>
+                        <ol>
+                            <li><b>Testing requests in isolation</b> – Executing a single API request and checking the
+                                response accordingly. Such basic tests are the minimal building blocks we should start
+                                with, and there’s no reason to continue testing if these tests fail.</li>
+                            <li><b>Multi-step workflow with several requests</b> – Testing a series of requests which
+                                are common user actions, since some requests can rely on other ones. For example, we
+                                execute a POST request that creates a resource and returns an auto-generated identifier
+                                in its response. We then use this identifier to check if this resource is present in the
+                                list of elements received by a GET request. Then we use a PATCH endpoint to update new
+                                data, and we again invoke a GET request to validate the new data. Finally, we DELETE
+                                that resource and use GET again to verify it no longer exists.</li>
+                            <li><b>Combined API and web UI tests</b> – This is mostly relevant to manual testing, where
+                                we want to ensure data integrity and consistency between the UI and API.</li>
+                        </ol>
+
+                        <p>We execute requests via the API and verify the actions through the web app UI and vice versa.
+                            The purpose of these integrity test flows is to ensure that although the resources are
+                            affected via different mechanisms the system still maintains expected integrity and
+                            consistent flow. </p>
+
+                    </section>
+
+                    <section class="article-section">
+                        <h4 id="my_restful_booker_API_test_examples">My Restful Booker API test examples</h4>
+                        <p><a
+                                href="https://www.postman.com/ivang1f/workspace/my-workspace/collection/21979091-ec197f73-1f42-4644-8ac3-2fe8bc13ca98?action=share&creator=21979091&active-environment=21979091-b82d0b01-8c08-4f96-9612-aa9195aba40f">
+                                You can check my API test examples in this POSTMAN workspace<i
+                                    class="fa fa-external-link" aria-hidden="true"></i></a></p>
+
+                    </section>
+
+                    <section class="article-section">
+                        <h4 id="links_used">Links used</h4>
+                        <ol>
+                            <li><a
+                                    href="https://www.sisense.com/blog/rest-api-testing-strategy-what-exactly-should-you-test/">REST
+                                    API Testing Strategy: What Exactly Should You Test?<i class="fa fa-external-link"
+                                        aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.postman.com/">Postman - is an API platform for building and using
+                                    APIs<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        </ol>
+                    </section>
+
+                </div>
+
+            </main>
+
+            <!--side-section-->
+            <aside class="side-section">
+                <h3>Navigation</h3>
+
+                <ul class="side-section-nav">
+                    <li><a href="#where_to_start" rel="where_to_start">Where to start?</a></li>
+                    <li><a href="#main_aspects_to_test_our_API" rel="main_aspects_to_test_our_API">Main aspects to test
+                            our API</a></li>
+                    <li><a href="#my_restful_booker_API_test_examples" rel="my_restful_booker_API_test_examples">My
+                            Restful Booker API test examples</a></li>
+                    <li><a href="#links_used" rel="links_used">Links Used</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <!--footer-section-1-->
+            <ul class="footer-section">
+                <li>
+                    <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+                    <a>346-804-34-64</a>
+                </li>
+                <!--footer-section-2-->
+                <li>
+                    <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h2>
+                    <a href="mailto:gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
+                </li>
+                <!--footer-section-3-->
+                <li>
+                    <h2>Follow Me</h2>
+                    <a href="https://www.linkedin.com/in/ivan-gavrikov-43a340234/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <!--footer-section-4-->
+                <li>
+                    <h2>2023 - Ivan Gavrikov</h2>
+                    <a href="../ivan-qa/index.html">Quality Assurance Specialist</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
