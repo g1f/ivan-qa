@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ivan Gavrikov &#8211; Projects &#8211; Automation testing with Cypress</title>
+    <!--Meta-->
+    <meta charset=utf-8>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ivan-qa/favicon-apple-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../ivan-qa/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../ivan-qa/favicon-16x16.png">
+    <!--Plugins CSS-->
+    <!--font-awesome-version 4.7.0-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../ivan-qa/styles/main.css">
+</head>
+
+<body id="top">
+    <!--back-to-top-->
+    <a href="#top" rel="back-to-top">
+        <div class="btn-back-to-top">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        </div>
+    </a>
+    <!--page-wrapper-->
+    <div class="projects-wrapper">
+        <div class="top-wrapper">
+            <!--theme-switcher-->
+            <div class="dark-mode-section">
+                <button class="btn-dark-mode">Dark Mode</button>
+            </div>
+            <script src="../../ivan-qa/scripts/dark-mode.js"></script>
+            <!--top-section-->
+            <div class="top-section">
+                <!--header-->
+                <header>
+                    <div class="person-info">
+                        <h1 class="name"><a href="../../ivan-qa/index.html"><i class="fa fa-user-o"
+                                    aria-hidden="true"></i>Ivan
+                                Gavrikov</a></h1>
+                        <h2 class="position">QA Specialist</h2>
+                    </div>
+                </header>
+
+                <!--nav-->
+                <nav class="top-nav">
+                    <ul>
+                        <li><a href="../../ivan-qa/resume.html">Resume</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="https://github.com/g1f">GitHub</a></li>
+
+                        <li>|</li>
+
+                        <li><a href="../../ivan-qa/feedback.html">Feedback</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--main-nav-menu-->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../ivan-qa/index.html">Main</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li><a href="../../ivan-qa/projects.html">Projects</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li>Automation testing with Cypress</li>
+            </ul>
+        </nav>
+        <!--main-wrapper-->
+        <div class="main-wrapper">
+            <!--main-section-->
+            <main class="main-section">
+                <!--main-section-item-->
+                <div class="main-section-item">
+                    <h3>Automation testing with Cypress</h3>
+
+                    <section class="article-section">
+                        <h4 id="what_is_cypress">What is Cypress?</h4>
+                        <p>Test Automation is a way of verifying and validating test scenarios via specific tools and
+                            frameworks. QAs create automated scripts, feed them into automation tools that launch the
+                            application, run through the test scenario, and mark the test as passed or failed.
+                        </p>
+                        <p>Test Automation is recommended for repetitive scenarios since it saves time and effort that
+                            would otherwise have to be put in by human testers.</p>
+
+                        <p>Cypress framework is a NodeJS-based modern automation tool that supports
+                            JavaScript/Typescript as the programing language. There are many advantages and
+                            disadvantages of Cypress. However, despite its recency, it is the most popular and
+                            easy-to-use tool in the automation world, quickly becoming a favorite of devs and testers.
+                        </p>
+
+                    </section>
+
+                    <section class="article-section">
+                        <h4 id="how_to_set_up_cypress_for_automation">How to Set up Cypress for Automation?</h4>
+                        <p>Cypress is shipped as an NPM package, so install the npm package from the repository and
+                            configure it to use Cypress.</p>
+                        <ol>
+                            <li>Step 1: Navigate to the desired folder. Create New Folder (cypressdemo).</li>
+                            <li>Step 2: Inside the cypressdemo folder, open terminal or command prompt.</li>
+                            <li>Step 3: Enter the command: npm install cypress –save-dev</li>
+                            <li>Step 4: Once the installation is complete, enter the command: npx cypress open</li>
+                        </ol>
+                    </section>
+
+                    <section class="article-section">
+                        <h4 id="understanding_folder_structures_in_cypress">Understanding Folder Structures in Cypress
+                        </h4>
+                        <p>By default, Cypress comes with a folder structure. The main folder is cypress, within which
+                            there are subfolders.</p>
+                        <ul>
+                            <li><b>Integration:</b> This folder contains the actual test scripts.</li>
+                            <li><b>Fixtures:</b> If you are using external data inside your tests, your data can be
+                                organized inside the Fixtures folder.</li>
+                            <li><b>Plugins:</b> The Plugins folder contains the special files that can execute the code
+                                before the project loads. If your project needs pre-processors, include them in this
+                                folder and configure them accordingly. By default, the plugins folder contains the
+                                index.js file, which can be customized to create your tasks.</li>
+                            <li><b>Support:</b> The Support folder contains utilities, global commands, frequently used
+                                codes, etc. By default, this folder comes with two files – commands.js and index.js.
+                                Additional files and folders can be added as required.</li>
+                            <li><b>Assets:</b> A folder called downloads will be created after the test run, including
+                                screenshots, videos, etc.</li>
+                        </ul>
+                    </section>
+
+                    <section class="article-section">
+                        <h4 id="my_cypress_test_scripts">My Cypress test scripts</h4>
+                        <p>Cypress Tests can be executed in two ways:</p>
+                        <ul>
+                            <li>Using Cypress Runner (UI)</li>
+                            <li>Using Cypress CLI (Command Line)</li>
+                        </ul>
+
+                        <p><a href="../docs/">
+                                You can check my Cypress test script examples here<i class="fa fa-external-link"
+                                    aria-hidden="true"></i></a></p>
+
+                    </section>
+
+                    <section class="article-section">
+                        <h4 id="links_used">Links used</h4>
+                        <ol>
+                            <li><a href="https://www.browserstack.com/guide/cypress-automation-tutorial">Cypress
+                                    Automation Tutorial<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.cypress.io/">Cypress.io - Test. Automate. Accelerate.<i
+                                        class="fa fa-external-link" aria-hidden="true"></i></a></li>
+                        </ol>
+                    </section>
+
+                </div>
+
+            </main>
+
+            <!--side-section-->
+            <aside class="side-section">
+                <h3>Navigation</h3>
+
+                <ul class="side-section-nav">
+                    <li><a href="#what_is_cypress" rel="what_is_cypress">What is Cypress?</a></li>
+                    <li><a href="#how_to_set_up_cypress_for_automation" rel="how_to_set_up_cypress_for_automation">How
+                            to Set up Cypress for Automation?</a>
+                    </li>
+                    <li><a href="#understanding_folder_structures_in_cypress"
+                            rel="understanding_folder_structures_in_cypress">Understanding Folder Structures in
+                            Cypress</a></li>
+                    <li><a href="#my_cypress_test_scripts" rel="my_cypress_test_scripts">My Cypress test scripts</a>
+                    </li>
+                    <li><a href="#links_used" rel="links_used">Links Used</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <!--footer-section-1-->
+            <ul class="footer-section">
+                <li>
+                    <h2><i class="fa fa-phone" aria-hidden="true"></i>Phone</h2>
+                    <a>346-804-34-64</a>
+                </li>
+                <!--footer-section-2-->
+                <li>
+                    <h2><i class="fa fa-envelope-o" aria-hidden="true"></i>Email</h2>
+                    <a href="mailto:gifvan@gmail.com" target="_blank">gifvan@gmail.com</a>
+                </li>
+                <!--footer-section-3-->
+                <li>
+                    <h2>Follow Me</h2>
+                    <a href="https://www.linkedin.com/in/ivan-gavrikov-43a340234/" target="_blank"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+                </li>
+                <!--footer-section-4-->
+                <li>
+                    <h2>2023 - Ivan Gavrikov</h2>
+                    <a href="../ivan-qa/index.html">Quality Assurance Specialist</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
