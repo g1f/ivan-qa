@@ -119,9 +119,38 @@
                     <section class="article-section">
                         <h4 id="my_jenkins_usage">My Jenkins Usage</h4>
 
-                        <p><a href="../docs/">
-                                You can check my Jenkins usage examples here<i class="fa fa-external-link"
-                                    aria-hidden="true"></i></a></p>
+                        <p>At first, I was getting an issue:<br><b>535-5.7.1 Username and Password not
+                                accepted.</b><br>It happend
+                            because the settings of the smtp server were not applied correctly due to the new Google
+                            Security Policies.</p>
+                        <p>Since 30 May 2023, Google doesn't support Less Secure Apps feature by default.
+                        </p>
+                        <img src="../images/articles/jenkins-google-less-secure-app.png"
+                            alt="Google Less Secure App notification">
+                        <p>We have to follow
+                            steps below to resolve the Authentication issue during sending email via SMTP.</p>
+                        <ol>
+                            <li>Enable 2-step Verification in your mail</li>
+                            <li>Generate App Password for Jenkins. This setting can be found in the Security -> 2-Step
+                                Verification -> App passwords at the bottom of the page</li>
+                            <li>Use generated password in your Jenkins mail settings</li>
+                        </ol>
+
+                        <img src="../images/articles/jenkins-app-password-section.png"
+                            alt="Google App password section">
+
+                        <p>Once we've finished, we can proceed to build our simple pipeline. It includes:</p>
+                        <ul>
+                            <li>Created test scripts</li>
+                            <li>Set Git integration for every build</li>
+                            <li>Add bash command to execute test scripts</li>
+                            <li>Set auto-email sending about successed/failed build</li>
+                        </ul>
+
+                        <p>Once we done with the steps above the build can be executed.</p>
+                        <img src="../images/articles/jenkins-build-example.png" alt="Jenkins build exmple">
+                        <p>And we also got the email notification about the completion with the link to the build.</p>
+                        <img src="../images/articles/jenkins-gmail-notification.png" alt="Jenkins gmail notification">
 
                     </section>
 
@@ -133,6 +162,10 @@
                                         aria-hidden="true"></i></a></li>
                             <li><a href="https://www.jenkins.io/">Jenkins - Build great things at any scale<i
                                         class="fa fa-external-link" aria-hidden="true"></i></a></li>
+
+                            <li><a href="https://stackoverflow.com/a/73753430">Issue solving with email sendings in
+                                    Jenkins<i class="fa fa-external-link" aria-hidden="true"></i></a></li>
+
                         </ol>
                     </section>
 
