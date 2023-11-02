@@ -40,7 +40,7 @@
   --color-font: #e1e1ff;
   --color-font-description: #ceceff;
   --color-links: #fcfcfc;
-  --color-p-links: #3b75cc;
+  --color-p-links: #95b9f0;
   --color-btn-links: #242424;
   --color-calc-notice: #b68b88;
 
@@ -114,6 +114,7 @@ body {
 }
 
 /*common-headings*/
+h1,
 h2,
 h3,
 h4,
@@ -123,7 +124,6 @@ h6 {
 }
 
 h1 {
-  color: var(--heading-color);
   text-transform: uppercase;
   font-size: 1.4em;
 }
@@ -157,12 +157,14 @@ h6 {
 /*common-p / li / i / a / img / table etc*/
 p {
   margin-bottom: 0.4em;
+  line-height: 1.3em;
 }
 
 ul
 ,.ol {
   list-style-type: none;
   list-style-position: inside;
+  line-height: 1.3em;
 }
 
 i {
@@ -347,11 +349,17 @@ footer {
   border-top: var(--color-border-top-bottom);
 }
 
+.footer-section {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .footer-section li {
   display: inline-block;
   text-align: justify;
-  padding: 0.5em;
-  min-width: 23%;
+  margin: 2%;
+  min-width: 15%
 }
 
 /*SPECIAL-STYLES------------*/
@@ -363,6 +371,10 @@ footer {
   justify-content: center;
 }
 
+.index-wrapper .main-section-item {
+  margin-bottom: 6em;
+}
+
 .index-wrapper .hello-title
 ,.index-wrapper .gallery-section h2
 ,.index-wrapper .tools-section h2
@@ -370,30 +382,37 @@ footer {
   font-size: 2em;
 }
 
-/*index-about*/
-.index-wrapper .about-section
-,.index-wrapper .core-skills {
-  margin-bottom: 3em;
+.index-wrapper .gallery-section h2 
+,.index-wrapper .tools-section h2
+,.index-wrapper .vendors-section h2 {
+  text-align: center;
 }
 
-.index-wrapper .about-section {
-  max-width: 70%;
+/*index-about*/
+.index-wrapper .about-section
+,.index-wrapper .core-skills
+,.index-wrapper .link-section {
+  margin-bottom: 3em;
+  margin-left: 35%;
 }
 
 .index-wrapper .link-section {
-  text-align: left;
+  text-align: center;
 }
 
 .index-wrapper .avatar {
-  display: block;
   float: left;
-  margin: 2% 2% 2% 0;
   max-width: 30%;
+  margin-bottom: 3em;
 }
 
 .index-wrapper .avatar,
 .index-wrapper .avatar img {
-  border-radius: 50px;
+  border-radius: 15%;
+}
+
+.index-wrapper .avatar img {
+  vertical-align: middle;
 }
 
 .index-wrapper .project-links {
@@ -409,7 +428,7 @@ footer {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  margin: 10px;
+  margin: 5%;
   box-shadow: var(--color-btn-shadow);
   transition: 0.2s all;
 }
@@ -507,6 +526,7 @@ footer {
 .resume-wrapper .avatar {
   display: block;
   float: right;
+  min-width: 20%
 }
 
 /*resume-footer*/
@@ -514,7 +534,8 @@ footer {
   overflow: hidden;
   clear: both;
   text-align: center;
-  padding: 4%;
+  border-top: var(--color-border-top-bottom);
+  padding: 2%;
 }
 
 /*resume-colors-special*/
@@ -609,15 +630,6 @@ footer {
   list-style-type: disc;
 }
 
-.resume-wrapper .job-info-list > li > ul {
-  list-style-type: none;
-  padding-left: 1.2em;
-}
-
-.resume-wrapper .job-info-list > li:nth-child(n+2):nth-child(-n+3) {
-  list-style-type: none;
-}
-
 .resume-wrapper .btn-simple {
   display: inline-block;
   color: var(--color-btn-links);
@@ -675,7 +687,8 @@ footer {
 ,.projects-wrapper .article-section ul
 ,.projects-wrapper .article-section ol
 ,.projects-wrapper .side-section-nav li
-,.projects-wrapper .article-section img {
+,.projects-wrapper .article-section img
+,.projects-wrapper .article-section video {
   margin-bottom: 1em;
 }
 
@@ -685,10 +698,16 @@ footer {
 
 .projects-wrapper .main-section-item ul li i
 ,.projects-wrapper .main-section-item ol li i
-,.projects-wrapper .main-section-item p i {
+,.projects-wrapper .main-section-item a i
+,.resume-wrapper .main-section-item a i {
   margin-left: 0.3em;
   font-size: 0.7em;
   padding: 0;
+}
+
+.projects-wrapper .main-section-item a i
+,.resume-wrapper .main-section-item a i {
+  vertical-align: super;
 }
 
 .projects-wrapper .article-section li a:hover
@@ -700,7 +719,6 @@ footer {
   position: sticky;
   top: 1%;
   bottom: 1%;
-  width: 25%;
   min-width: 20%;
   height: 80vh;
   min-height: 60vh;
@@ -718,6 +736,10 @@ footer {
 
 .projects-wrapper .article-section-img {
   max-height: 50%;
+}
+
+.projects-wrapper .article-section video {
+  width: 100%;
 }
 
 #lighthouse_report {
