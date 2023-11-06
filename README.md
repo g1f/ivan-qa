@@ -10,3 +10,4 @@ Some information is uniquely written by me. You should provide a link to my webs
 Also!
 Your feedback is very important to me and can help make it better.
 Feel free to write your thoughts and opinions on the "Feedback" page.
+https://ivan-qa.synology.me/feedback.html
