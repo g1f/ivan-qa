@@ -353,9 +353,9 @@ footer {
 
 .footer-section li {
   display: inline-block;
-  text-align: justify;
+  text-align: center;
   margin: 2%;
-  min-width: 15%
+  min-width: 15%;
 }
 
 /*SPECIAL-STYLES------------*/
